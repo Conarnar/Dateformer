@@ -14,7 +14,7 @@ public class ColliderKillsPlayer : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("Player died to " + enemyName); 
-            //TODO launch VN par
+            //TODO launch VN part
         }
     }
 
