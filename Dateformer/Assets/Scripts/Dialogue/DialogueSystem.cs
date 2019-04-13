@@ -10,6 +10,14 @@ public class DialogueSystem : MonoBehaviour
     public static DialogueSystem singleton;
     public DialogueElements elements;
     public GameObject speechPanel { get { return elements.speechPanel; } }
+    public GameObject choicePanel { get { return elements.choicePanel; } }
+
+    public Button choice1Button { get { return elements.choice1Button; } }
+    public Button choice2Button { get { return elements.choice1Button; } }
+
+    public Text choice1Text { get { return elements.speakerNameText; } }
+    public Text choice2Text { get { return elements.speakerNameText; } }
+
     public Text speakerNameText { get { return elements.speakerNameText; } }
     public Text speechText { get { return elements.speechText; } }
     public bool isSpeaking { get { return speaking != null; } }
@@ -34,6 +42,16 @@ public class DialogueSystem : MonoBehaviour
         StopSpeaking();
         speechText.text = targetSpeech;
         speaking = StartCoroutine(Speaking(speech, speaker, true));
+    }
+
+    public void PromptForAnswer()
+    {
+
+    }
+
+    public void CloseChoicePanel()
+    {
+        choicePanel.SetActive(false);
     }
 
     public void Close()
@@ -92,6 +110,12 @@ public class DialogueSystem : MonoBehaviour
         public GameObject speechPanel;
         public Text speakerNameText;
         public Text speechText;
+
+        public GameObject choicePanel;
+        public Button choice1Button;
+        public Button choice2Button;
+        public Text choice1Text;
+        public Text choice2Text;
     }
 
 
