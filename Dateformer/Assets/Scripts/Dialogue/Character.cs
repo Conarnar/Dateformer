@@ -20,6 +20,7 @@ public class Character : MonoBehaviour
         root = GetComponent<RectTransform>();
         renderer = GetComponentInChildren<Image>();
         dialogue = DialogueSystem.singleton;
+        dialogue.CloseChoicePanel();
         CharacterManager.singleton.characterDict.Add(characterName, cm.characters.Count);
         cm.characters.Add(this);
     }
