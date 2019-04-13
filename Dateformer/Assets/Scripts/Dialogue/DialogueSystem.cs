@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 
@@ -12,16 +13,21 @@ public class DialogueSystem : MonoBehaviour
     public GameObject speechPanel { get { return elements.speechPanel; } }
     public GameObject choicePanel { get { return elements.choicePanel; } }
 
-    public Button choice1Button { get { return elements.choice1Button; } }
-    public Button choice2Button { get { return elements.choice1Button; } }
+    public int choice1Index;
+    public int choice2Index;
 
-    public Text choice1Text { get { return elements.speakerNameText; } }
-    public Text choice2Text { get { return elements.speakerNameText; } }
+    public Button choice2Button { get { return elements.button; } }
+
+    public Text choice1Text { get { return elements.choice1Text; } }
+    public Text choice2Text { get { return elements.choice2Text; } }
 
     public Text speakerNameText { get { return elements.speakerNameText; } }
     public Text speechText { get { return elements.speechText; } }
     public bool isSpeaking { get { return speaking != null; } }
     public bool isWaitingForUserInput = false;
+
+    public bool isWaitingForResponse = false;
+
 
     Coroutine speaking = null;
     string targetSpeech = "";
@@ -29,6 +35,12 @@ public class DialogueSystem : MonoBehaviour
     private void Awake()
     {
         singleton = this;
+    }
+
+    private void Start()
+    {
+        choice1Index = elements.choice1Button;
+        choice2Index = elements.choice2Button;
     }
 
     public void Say(string speech, string speaker="")
@@ -44,9 +56,18 @@ public class DialogueSystem : MonoBehaviour
         speaking = StartCoroutine(Speaking(speech, speaker, true));
     }
 
-    public void PromptForAnswer()
+    public void PromptForAnswer(string choice1, string choice2, int choice1NextIndex, int choice2NextIndex)
     {
+        choice1Text.text = choice1;
+        choice2Text.text = choice2;
+        choice1Index = choice1NextIndex;
+        choice2Index = choice2NextIndex;
+        choicePanel.SetActive(true);
 
+        if (choice2 == "")
+            choice2Button.gameObject.SetActive(false);
+        else
+            choice2Button.gameObject.SetActive(true);
     }
 
     public void CloseChoicePanel()
@@ -112,11 +133,14 @@ public class DialogueSystem : MonoBehaviour
         public Text speechText;
 
         public GameObject choicePanel;
-        public Button choice1Button;
-        public Button choice2Button;
+        public int choice1Button;
+        public int choice2Button;
         public Text choice1Text;
         public Text choice2Text;
+        
+        public Button button;
     }
 
-
 }
+
+
