@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -23,6 +24,21 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void Transition(string sceneName)
+    {
+        StartCoroutine(FadeTransition(sceneName));
+    }
+
+    IEnumerator FadeTransition(string sceneName)
+    {
+        yield return Fader.singleton.FadeOut(1);
+        yield return SceneManager.LoadSceneAsync(sceneName);
+        Debug.Log("scene loaded");
+        yield return new WaitForSeconds(.5f);
+        Debug.Log("have waited");
+        yield return Fader.singleton.FadeIn(1);
+        Debug.Log("fade should be done");
+    }
     public void RaiseAffinity(string characterName)
     {
         switch (characterName)
