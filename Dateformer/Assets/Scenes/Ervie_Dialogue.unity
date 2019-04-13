@@ -593,6 +593,11 @@ PrefabInstance:
       propertyPath: character
       value: 
       objectReference: {fileID: 2059428313}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: sceneToLoad
+      value: Ervie_Dialogue
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e648c959d716e9f418345b0294157933, type: 3}
 --- !u!1001 &3371449829387429540
@@ -710,6 +715,11 @@ PrefabInstance:
     - target: {fileID: 3371449829976165927, guid: 6c6edc8fe9f948547b87d7026adb0e75,
         type: 3}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371449829534988368, guid: 6c6edc8fe9f948547b87d7026adb0e75,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3371449829164140116, guid: 6c6edc8fe9f948547b87d7026adb0e75,
