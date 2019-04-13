@@ -41,6 +41,7 @@ public class SceneScript : MonoBehaviour
                         GameManager.singleton.RaiseAffinity(character.characterName);
 
                     endTriggered = true;
+                    Fader.singleton.StartCoroutine(Fader.singleton.FadeOut(1));
                     return;
                 }
                 character.Say(characterLines[dialogueIndex].dialogue);

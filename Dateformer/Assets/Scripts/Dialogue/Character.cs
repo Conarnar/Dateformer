@@ -8,7 +8,7 @@ public class Character : MonoBehaviour
 {
     public string characterName;
     public RectTransform root;
-    public Image renderer;
+    public SpriteRenderer renderer;
 
     public Sprite[] images;
 
@@ -18,7 +18,7 @@ public class Character : MonoBehaviour
     {
         CharacterManager cm = CharacterManager.singleton;
         root = GetComponent<RectTransform>();
-        renderer = GetComponentInChildren<Image>();
+        renderer = GetComponentInChildren<SpriteRenderer>();
         dialogue = DialogueSystem.singleton;
         dialogue.CloseChoicePanel();
         CharacterManager.singleton.characterDict.Add(characterName, cm.characters.Count);
@@ -32,7 +32,7 @@ public class Character : MonoBehaviour
         GameObject ob = GameObject.Instantiate(prefab, cm.characterPanel);
         root = ob.GetComponent<RectTransform>();
         characterName = _name;
-        renderer = ob.GetComponent<Image>();
+        renderer = ob.GetComponent<SpriteRenderer>();
         dialogue = DialogueSystem.singleton;
     }
 
