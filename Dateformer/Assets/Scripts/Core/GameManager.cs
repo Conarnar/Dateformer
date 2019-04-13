@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -28,6 +29,16 @@ public class GameManager : MonoBehaviour
         {
             case "Spike-chan":
                 spikeAffinity.affinityLevel++;
+                break;
+        }
+    }
+
+    public void CloseRoute(string characterName)
+    {
+        switch (characterName)
+        {
+            case "Spike-chan":
+                spikeAffinity.hasBeenClosed = true;
                 break;
         }
     }

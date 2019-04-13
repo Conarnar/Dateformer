@@ -266,7 +266,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 399581425}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 499966789}
+        m_MethodName: AnswerChoiceOne
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &399581425
@@ -471,11 +482,15 @@ MonoBehaviour:
     speakerNameText: {fileID: 1033406513}
     speechText: {fileID: 441751704}
     choicePanel: {fileID: 486257432}
-    choice1Button: {fileID: 399581424}
-    choice2Button: {fileID: 1092647530}
+    choice1Button: 0
+    choice2Button: 0
     choice1Text: {fileID: 661402052}
     choice2Text: {fileID: 1958882392}
+    button: {fileID: 1092647530}
+  choice1Index: 0
+  choice2Index: 0
   isWaitingForUserInput: 0
+  isWaitingForResponse: 0
 --- !u!114 &499966789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -489,17 +504,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 2059428313}
-  index: 0
+  dialogueIndex: 0
   additive: 0
   characterLines:
-  - dialogue: Hello
+  - nextDialogueIndex: 1
+    dialogue: Hello
     currentMood: 0
-  - dialogue: Thank you!!!
+    promptForResponse: 0
+    isEndLine: 0
+    closeRoute: 0
+  - nextDialogueIndex: 2
+    dialogue: Do you love me?? /.\
     currentMood: 1
-  - dialogue: Suki <333344
+    promptForResponse: 1
+    isEndLine: 0
+    closeRoute: 0
+  - nextDialogueIndex: 3
+    dialogue: Suki <333344
     currentMood: 3
-  - dialogue: B-Baka~~~!!!
+    promptForResponse: 1
+    isEndLine: 0
+    closeRoute: 0
+  - nextDialogueIndex: 4
+    dialogue: B-Baka~~~!!!
     currentMood: 4
+    promptForResponse: 0
+    isEndLine: 1
+    closeRoute: 1
+  - nextDialogueIndex: 5
+    dialogue: Byeeeee <3
+    currentMood: 0
+    promptForResponse: 0
+    isEndLine: 1
+    closeRoute: 0
+  choiceIndex: 0
+  choices:
+  - choice1Text: I love you!!!
+    choice1NextIndex: 2
+    choice2Text: I Hate you!!!!
+    choice2NextIndex: 3
+  - choice1Text: Bye!
+    choice1NextIndex: 4
+    choice2Text: 
+    choice2NextIndex: 0
 --- !u!1 &634646735
 GameObject:
   m_ObjectHideFlags: 0
@@ -1069,7 +1116,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1092647531}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 499966789}
+        m_MethodName: AnswerChoiceTwo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1092647531
@@ -1221,7 +1279,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.027500002, y: 0.09455468}
   m_AnchorMax: {x: 0.97, y: 0.40256643}
-  m_AnchoredPosition: {x: 1, y: -6.399994}
+  m_AnchoredPosition: {x: 1, y: -6.4000244}
   m_SizeDelta: {x: -674, y: -8.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1224965772
