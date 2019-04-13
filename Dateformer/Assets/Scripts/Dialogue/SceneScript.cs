@@ -15,6 +15,7 @@ public class SceneScript : MonoBehaviour
     public List<Choices> choices = new List<Choices>();
 
     bool endTriggered = false;
+    bool startedDialogue = false;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,7 @@ public class SceneScript : MonoBehaviour
         yield return new WaitForSeconds(1);
         character.dialogue.Say(characterLines[dialogueIndex].dialogue, character.characterName);
         dialogueIndex++;
+        startedDialogue = true;
     }
 
 
@@ -35,7 +37,7 @@ public class SceneScript : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Space) && !character.dialogue.isWaitingForResponse && !endTriggered)
+        if (Input.GetKeyDown(KeyCode.Space) && !character.dialogue.isWaitingForResponse && !endTriggered && startedDialogue)
         {
             if (!character.dialogue.isSpeaking || character.dialogue.isWaitingForUserInput)
             {
