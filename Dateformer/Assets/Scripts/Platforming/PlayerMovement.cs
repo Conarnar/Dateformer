@@ -2,13 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// last edited: Evan Cheng
+/// </summary>
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] float jump;
+    [SerializeField] float groundCheck;
+
     bool jumping = false;
     float horizontal = 0;
-    bool grounded = false;
+    bool grounded {
+        get
+        {
+            return Physics2D.Raycast(transform.position, Vector2.down, groundCheck, 1 << 8);
+        }
+    }
 
     Rigidbody2D rb;
     Collider2D col;
@@ -30,14 +40,5 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * speed * Time.fixedDeltaTime, (jumping && grounded) ? jump : rb.velocity.y);
-        grounded = false;
-    }
-
-    void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.collider.bounds.max.y < col.bounds.min.y)
-        {
-            grounded = true;
-        }
     }
 }

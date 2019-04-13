@@ -14,6 +14,15 @@ public class ColliderKillsPlayer : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("Player died to " + enemyName); 
+            //TODO launch VN part
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Player died to " + enemyName);
         }
     }
 }
