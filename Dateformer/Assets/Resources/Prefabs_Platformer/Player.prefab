@@ -96,6 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 300
   jump: 5
+  groundCheck: 0.18
 --- !u!50 &1767764284341488619
 Rigidbody2D:
   serializedVersion: 4

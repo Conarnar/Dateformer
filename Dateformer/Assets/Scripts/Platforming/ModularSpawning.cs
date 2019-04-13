@@ -8,6 +8,10 @@ public class ModularSpawning : MonoBehaviour
     [SerializeField] bool spawnMiddleAffinity;
     [SerializeField] bool spawnHighestAffinity;
 
+    [SerializeField] GameObject spikePrefab;
+    [SerializeField] GameObject turretPrefab;
+    [SerializeField] GameObject turtlePrefab;
+
     void Awake()
     {
         GameManager manager = GameManager.singleton;
@@ -43,13 +47,13 @@ public class ModularSpawning : MonoBehaviour
         switch (choices[Random.Range(0, choices.Count)])
         {
             case 0:
-                // spike
+                Instantiate(spikePrefab, transform, false);
                 break;
             case 1:
-                // bullet
+                Instantiate(turretPrefab, transform, false);
                 break;
             case 2:
-                // enemy
+                Instantiate(turtlePrefab, transform, false);
                 break;
         }
     }

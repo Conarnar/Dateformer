@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Turrent : MonoBehaviour
+public class Turret : MonoBehaviour
 {
     [SerializeField] Vector2 velocity;
     [SerializeField] float fireDelay;

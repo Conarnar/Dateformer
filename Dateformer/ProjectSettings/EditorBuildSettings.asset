@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Ervie_Dialogue.unity
+    guid: c0a46082d6612d445a720890f61cde10
   m_configObjects: {}

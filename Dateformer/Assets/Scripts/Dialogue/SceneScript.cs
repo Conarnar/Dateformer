@@ -6,7 +6,7 @@ public class SceneScript : MonoBehaviour
 {
     public Character character;
 
-
+    [SerializeField] string sceneToLoad;
     [SerializeField] int dialogueIndex = 0;
     [SerializeField] bool additive = false;
     public List<Behavior> characterLines = new List<Behavior>();
@@ -15,12 +15,21 @@ public class SceneScript : MonoBehaviour
     public List<Choices> choices = new List<Choices>();
 
     bool endTriggered = false;
+    bool startedDialogue = false;
 
     // Start is called before the first frame update
     void Start()
     {
+        StartCoroutine("Pause");
+        
+    }
+
+    IEnumerator Pause()
+    {
+        yield return new WaitForSeconds(1);
         character.dialogue.Say(characterLines[dialogueIndex].dialogue, character.characterName);
         dialogueIndex++;
+        startedDialogue = true;
     }
 
 
@@ -28,7 +37,7 @@ public class SceneScript : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Space) && !character.dialogue.isWaitingForResponse && !endTriggered)
+        if (Input.GetKeyDown(KeyCode.Space) && !character.dialogue.isWaitingForResponse && !endTriggered && startedDialogue)
         {
             if (!character.dialogue.isSpeaking || character.dialogue.isWaitingForUserInput)
             {
@@ -41,6 +50,7 @@ public class SceneScript : MonoBehaviour
                         GameManager.singleton.RaiseAffinity(character.characterName);
 
                     endTriggered = true;
+                    GameManager.singleton.Transition(sceneToLoad);
                     return;
                 }
                 character.Say(characterLines[dialogueIndex].dialogue);
