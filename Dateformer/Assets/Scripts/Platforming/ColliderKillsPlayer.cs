@@ -16,4 +16,12 @@ public class ColliderKillsPlayer : MonoBehaviour
             Debug.Log("Player died to " + enemyName); 
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Player died to " + enemyName);
+        }
+    }
 }
