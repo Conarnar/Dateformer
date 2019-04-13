@@ -9,14 +9,25 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] float jump;
-    [SerializeField] float groundCheck;
 
     bool jumping = false;
     float horizontal = 0;
     bool grounded {
         get
         {
-            return Physics2D.Raycast(transform.position, Vector2.down, groundCheck, 1 << 8);
+            float minX = col.bounds.min.x;
+            float maxX = col.bounds.max.x;
+            float minY = col.bounds.min.y;
+            
+            for (int i = 0; i < 5; i++)
+            {
+                if (Physics2D.Raycast(new Vector2(Mathf.Lerp(minX, maxX, i / 4f), minY), Vector2.down, 0.1f, 1 << 8))
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
     }
 
@@ -33,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        jumping = Input.GetButton("Jump");
+        jumping = Input.GetButtonDown("Jump");
         horizontal = Input.GetAxis("Horizontal");
     }
 
