@@ -16,12 +16,12 @@ MonoBehaviour:
   - {fileID: 114415640613899710}
   - {fileID: 114373741966447492}
   EditorEvents:
-  - {fileID: 114831203125917948}
+  - {fileID: 114940699697930450}
   MasterBanks:
   - {fileID: 114373741966447492}
   StringsBanks:
   - {fileID: 114415640613899710}
-  stringsBankWriteTime: 636907110494714410
+  stringsBankWriteTime: 636907495100118894
   cacheVersion: 3
 --- !u!114 &114193339057128474
 MonoBehaviour:
@@ -76,11 +76,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: D:\GitHub\Dateformer\Dateformer\Dateformer\FMOD_Dateformer\Build\Desktop\Master
     Bank.bank
-  lastModified: 636907110494674862
+  lastModified: 636907495100040259
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 104480
+    Value: 104192
   Exists: 1
 --- !u!114 &114415640613899710
 MonoBehaviour:
@@ -95,13 +95,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: FMOD_Dateformer\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636907110494714410
+  lastModified: 636907495100118894
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 718
   Exists: 1
 --- !u!114 &114831203125917948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Test
+  guid: 6c97ecd6636fe44fa062dc5231dc7631
+  Banks:
+  - {fileID: 114373741966447492}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10663
+--- !u!114 &114912112934616894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Test
+  guid: 6c97ecd6636fe44fa062dc5231dc7631
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10663
+--- !u!114 &114940699697930450
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
