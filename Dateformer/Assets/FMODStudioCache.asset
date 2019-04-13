@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114781559881354560}
-  - {fileID: 114272596319997394}
+  - {fileID: 114351850120190190}
   EditorEvents:
   - {fileID: 114967518544082796}
   MasterBanks:
-  - {fileID: 114272596319997394}
+  - {fileID: 114351850120190190}
   StringsBanks:
   - {fileID: 114781559881354560}
-  stringsBankWriteTime: 636907509985866413
+  stringsBankWriteTime: 636907558822868572
   cacheVersion: 3
 --- !u!114 &114193339057128474
 MonoBehaviour:
@@ -82,6 +82,26 @@ MonoBehaviour:
   - Name: 
     Value: 104192
   Exists: 1
+--- !u!114 &114351850120190190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\drfro\Documents\Dateformer\Dateformer\Assets\StreamingAssets\Master
+    Bank.bank
+  lastModified: 636907558822838807
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 104192
+  Exists: 1
 --- !u!114 &114373741966447492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\StreamingAssets\Master Bank.strings.bank
-  lastModified: 636907509985866413
+  lastModified: 636907558822868572
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -223,7 +243,7 @@ MonoBehaviour:
   Path: event:/SFX/Test
   guid: 6c97ecd6636fe44fa062dc5231dc7631
   Banks:
-  - {fileID: 114272596319997394}
+  - {fileID: 114351850120190190}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
