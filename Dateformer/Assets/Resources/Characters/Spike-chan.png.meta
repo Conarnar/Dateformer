@@ -1,0 +1,603 @@
+fileFormatVersion: 2
+guid: 36d82e53c90743c4e8b52cf0bfbabff9
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_0
+    21300002: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_1
+    21300004: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_2
+    21300006: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_3
+    21300008: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_4
+    21300010: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_5
+    21300012: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_6
+    21300014: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_7
+    21300016: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_8
+    21300018: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_9
+    21300020: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_10
+    21300022: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_11
+    21300024: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_12
+    21300026: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_13
+    21300028: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_14
+    21300030: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_15
+    21300032: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_16
+    21300034: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_17
+    21300036: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_18
+    21300038: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_19
+    21300040: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_20
+    21300042: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_21
+    21300044: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_22
+    21300046: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_23
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1999
+        width: 452
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fcc60699b08fa547be4df10bbb225ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_1
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1998
+        width: 452
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b1b83c7c6652a43a9f1ba015273a2b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_2
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 2002
+        width: 452
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb43b5c2c9afb1f48aca5ff63949cd81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_3
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1719
+        width: 452
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb9754beb60a3643b3ca26d9b72f070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_4
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 1717
+        width: 452
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05948d66e8d0444099cdbb99c9a9198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_5
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1713
+        width: 452
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7939af618857d67409c76233a8f3dd02
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_6
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1428
+        width: 452
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52426c6dfd93f004784eec39e699ce21
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_7
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 1432
+        width: 452
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 520d982288bf7ca4ba0cfc79524262d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_8
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 1430
+        width: 452
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5782ffa2cd88bad418803e2541d3a351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_9
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1147
+        width: 452
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e6723f33e6d764d8afe4f24e4909d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_10
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 1143
+        width: 452
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc406b742bb35d479babcb8e07fec22
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_11
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 1145
+        width: 452
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7f5b35ba102444793da6af18c7e097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_12
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 863
+        width: 452
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76fe627411cbf2d44ad9867942024cd4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_13
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 860
+        width: 452
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33cc76786b2df0e409a9ae78c0726a60
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_14
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 862
+        width: 452
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a38cfbda3d8ad2241aa2aa032d93c039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_15
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 586
+        width: 452
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f2f205575dc8244bfc2cbd40a8d439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_16
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 580
+        width: 452
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3db1a36d4d080429e7ae4a1ee2312f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_17
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 575
+        width: 452
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79796723117102641b5a0bc91ffab15b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_18
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 293
+        width: 452
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964440da59b2a014bbec8a7c3e7d50a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_19
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 299
+        width: 452
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42295e7471c797b4fb2b2281775b13b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_20
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 291
+        width: 452
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 141375abc2194ee48a8cea86b6fb18a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_21
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 7
+        width: 452
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3ca68cfba6e4d41b10276f021c3810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_22
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 156
+        width: 452
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6397aad6de9f06644ae7ca726755ad08
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Danganronpa 2 Goodbye Despair - Teruteru Hanamura_23
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 156
+        width: 452
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d5bca8700688e4aa0221fe675e3bb2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: cd60170b1c7d63a4e8b5f3ee066a0972
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
