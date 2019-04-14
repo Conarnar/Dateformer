@@ -25,6 +25,8 @@ public class Fader : MonoBehaviour
 
     public IEnumerator FadeOut(float time)
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/transition", GetComponent<Transform>().position);
+
         while (canvasGroup.alpha < 1) //alpha is not 1
         {
             canvasGroup.alpha += Time.deltaTime / time;
