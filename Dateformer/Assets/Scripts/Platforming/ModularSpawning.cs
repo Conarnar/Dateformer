@@ -12,6 +12,11 @@ public class ModularSpawning : MonoBehaviour
     [SerializeField] GameObject turretPrefab;
     [SerializeField] GameObject turtlePrefab;
 
+    void Awake()
+    {
+        Destroy(GetComponent<SpriteRenderer>());
+    }
+
     // Start is called before the first frame update
     void Start()
     {

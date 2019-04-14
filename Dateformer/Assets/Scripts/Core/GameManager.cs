@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     public Affinity bulletAffinity = new Affinity();
     public Affinity enemyAffinity = new Affinity();
 
-
+    GameObject pauseScreen; 
     private void Awake()
     {
         if (singleton != null)
@@ -25,6 +25,10 @@ public class GameManager : MonoBehaviour
             singleton = this;
             DontDestroyOnLoad(this.gameObject);
         }
+    }
+    private void Start()
+    {
+        pauseScreen = GameObject.FindGameObjectWithTag("PauseScreen"); 
     }
 
     public void TransitionEvent(string enemyName)
@@ -105,5 +109,32 @@ public class GameManager : MonoBehaviour
     {
         public int affinityLevel = 0;
         public bool hasBeenClosed = false;
+    }
+
+    private void Update()
+    {
+        //pause
+        if (Input.GetButtonDown("Cancel"))
+        {
+            if (Time.timeScale == 0f)
+            {
+                Time.timeScale = 1f;
+                if (pauseScreen != null)
+                {
+                    pauseScreen.SetActive(false);
+                }
+            }
+            else {
+                Time.timeScale = 0f;
+                if (pauseScreen != null)
+                {
+                    pauseScreen.SetActive(true);
+                }
+            }
+                
+        }
+
+
+
     }
 }

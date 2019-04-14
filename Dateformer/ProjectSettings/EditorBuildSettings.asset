@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/_Main_Menu.unity
     guid: 7c6ee9c8fcdaace4494599bfb431e08a
   - enabled: 1
-    path: Assets/Scenes/_Main_Platformer.unity
-    guid: 49137e050c1d74a469a463adb6dc3833
+    path: Assets/Scenes/Platformer Stages/Stage1.unity
+    guid: efabf5b94b892c541b41eac25bdb0e0c
   - enabled: 1
     path: Assets/Scenes/_Victory_Screen.unity
     guid: 7c15a23fb6c8fd0419d3177070df68d0
