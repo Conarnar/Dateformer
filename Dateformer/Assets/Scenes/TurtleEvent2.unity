@@ -575,12 +575,12 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.size
-      value: 15
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: choices.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -595,7 +595,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[0].dialogue
-      value: HAH! I GOT YOU!
+      value: '.....'
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -610,8 +610,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[1].dialogue
-      value: You just got got by the biggest, baddest obstacle of them all! Hah! Players
-        weep before me!
+      value: Oh it's you! I didn't think you'd actually come back!
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -631,8 +630,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[2].dialogue
-      value: Well get used to it! I'll be on you like stink on trash from here on
-        out!
+      value: Oh stop it..
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -647,12 +645,13 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[3].nextDialogueIndex
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[3].dialogue
-      value: I mean you seem kind of helpless though I feel bad.
+      value: I was just writing poetry by the way. I do it a lot when a player isn't
+        around.
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -672,27 +671,27 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[4].nextDialogueIndex
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[4].dialogue
-      value: Oh well! I got a reputation to uphold!
+      value: Oh. Okay then. Sorry I ran into you...
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[4].isEndLine
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
-        type: 3}
-      propertyPath: characterLines.Array.data[4].promptForResponse
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
+      propertyPath: characterLines.Array.data[4].promptForResponse
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
       propertyPath: choices.Array.data[0].choice1Text
-      value: Jeez you're a jerk!
+      value: Why wouldn't I?
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -702,27 +701,28 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: choices.Array.data[0].choice2Text
-      value: Good job!
+      value: I didn't want to. I'm trying my best.
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: choices.Array.data[0].choice2NextIndex
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[3].promptForResponse
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[5].nextDialogueIndex
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[5].dialogue
-      value: Hey thanks!
+      value: I like to write a lot about how I feel. or sometimes I'll write about
+        nature if I saw something pretty.
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -732,7 +732,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[6].dialogue
-      value: Hey wait! You're supposed to get mad! I totally just got you!
+      value: I write them with a pen of course!
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -742,12 +742,12 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: choices.Array.data[1].choice1Text
-      value: And what reputation is that?
+      value: What do you write about?
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: choices.Array.data[1].choice1NextIndex
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -762,17 +762,18 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[7].dialogue
-      value: I don't uh- I don't mind the compliment though.
+      value: I don't know how a hand could write things onto a paper. Do hands have
+        ink in them or something?
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[8].nextDialogueIndex
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[8].dialogue
-      value: Hah! I'm glad you asked.
+      value: You want me to read what I was working on today?
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -782,7 +783,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[9].dialogue
-      value: I'm Bullet! The hard obstacle! When you see me you know you're in trouble!
+      value: Green grass.
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -792,23 +793,22 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[10].dialogue
-      value: Guess I'll be talking to you a lot then huh? Seeing how you're such an
-        amateur!
+      value: Left step right step. Left step right step.
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[10].promptForResponse
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: choices.Array.data[1].choice2Text
-      value: 
+      value: Wait how do you write things? Do you have hands?
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: choices.Array.data[1].choice2NextIndex
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -818,7 +818,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[11].dialogue
-      value: Hmmm. What a sad attitude.
+      value: The days in the wind under the sun.
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -833,7 +833,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[12].dialogue
-      value: Guess I'll... see you again sooner than later huh?!
+      value: The clouds drift, the player runs,
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -843,12 +843,12 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[13].nextDialogueIndex
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[13].dialogue
-      value: Guess I'll... see you again sooner than later huh?!
+      value: It all happens like a theater around me.
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -858,12 +858,12 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: choices.Array.data[2].choice1Text
-      value: And to who do I owe this compliment?
+      value: Sure!
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: choices.Array.data[2].choice1NextIndex
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -878,17 +878,17 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[14].nextDialogueIndex
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[14].dialogue
-      value: Huh. Wait I didn't mean it like that I- oh why am I trying...
+      value: Left step right step. Left step right step.
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[14].promptForResponse
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -898,7 +898,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[15].dialogue
-      value: Uh.
+      value: My favorite thing to do is to look at grass.
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -908,7 +908,8 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[16].dialogue
-      value: Oh I didn't think you'd say yes.
+      value: But I uh- maybe I shared too much. I've never talked to somebody so much
+        before.
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -923,7 +924,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[17].dialogue
-      value: Okay then! I'll do my best to hit you next time!
+      value: The other obstacles are always so busy and never have time.
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -948,12 +949,12 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[18].dialogue
-      value: Okay then! I'll do my best to hit you next time!
+      value: You probably think I'm weird or something now huh?
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[18].isEndLine
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -973,7 +974,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[19].dialogue
-      value: Oh. I guess that makes sense. Sorry for hitting you.
+      value: Oh. Sorry I wasted your time then...
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -988,7 +989,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[0].currentMood
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -998,97 +999,177 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[14].currentMood
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
-        type: 3}
-      propertyPath: characterLines.Array.data[10].choiceIndex
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
-        type: 3}
-      propertyPath: characterLines.Array.data[14].choiceIndex
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
-      propertyPath: characterLines.Array.data[7].promptForResponse
+      propertyPath: characterLines.Array.data[10].choiceIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[14].choiceIndex
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[0].promptForResponse
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[2].isEndLine
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[1].choiceIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[2].choiceIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[3].choiceIndex
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
-      propertyPath: characterLines.Array.data[7].choiceIndex
+      propertyPath: characterLines.Array.data[4].currentMood
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
-      propertyPath: characterLines.Array.data[4].choiceIndex
+      propertyPath: characterLines.Array.data[4].closeRoute
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[8].promptForResponse
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[8].choiceIndex
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[9].promptForResponse
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[9].choiceIndex
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: choices.Array.data[3].choice1Text
-      value: Yah, you'll be seeing me a lot alright.
+      value: No I like talking to you!
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: choices.Array.data[3].choice1NextIndex
-      value: 11
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[15].promptForResponse
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[15].choiceIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[18].promptForResponse
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[18].choiceIndex
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: choices.Array.data[4].choice1Text
+      value: You really seem to like nature.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: choices.Array.data[4].choice1NextIndex
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: choices.Array.data[3].choice2Text
-      value: No.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
-        type: 3}
-      propertyPath: characterLines.Array.data[11].choiceIndex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
-        type: 3}
-      propertyPath: characterLines.Array.data[12].isEndLine
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
-        type: 3}
-      propertyPath: characterLines.Array.data[13].isEndLine
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
-        type: 3}
-      propertyPath: characterLines.Array.data[14].isEndLine
-      value: 1
+      value: I just don't like poetry a lot I guess.
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: choices.Array.data[3].choice2NextIndex
-      value: 14
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
-      propertyPath: characterLines.Array.data[14].closeRoute
+      propertyPath: characterLines.Array.data[19].promptForResponse
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[19].choiceIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[20].nextDialogueIndex
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[20].dialogue
+      value: Uhm. Thank you!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[20].isEndLine
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[20].closeRoute
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[21].nextDialogueIndex
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[21].dialogue
+      value: I'm sorry. I feel like I need to hide for now.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[22].nextDialogueIndex
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[22].dialogue
+      value: I'll see you again soon I hope!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[22].isEndLine
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
-        type: 3}
-      propertyPath: characterLines.Array.data[13].currentMood
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
-        type: 3}
-      propertyPath: characterLines.Array.data[12].currentMood
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1935758564172193538, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -1207,7 +1288,7 @@ PrefabInstance:
     - target: {fileID: 3371449829977511776, guid: 6c6edc8fe9f948547b87d7026adb0e75,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 20
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3371449829865090709, guid: 6c6edc8fe9f948547b87d7026adb0e75,
         type: 3}
@@ -1237,7 +1318,7 @@ PrefabInstance:
     - target: {fileID: 3371449828645161724, guid: 6c6edc8fe9f948547b87d7026adb0e75,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 20
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3371449829976165927, guid: 6c6edc8fe9f948547b87d7026adb0e75,
         type: 3}
