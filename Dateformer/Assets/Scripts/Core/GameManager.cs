@@ -56,11 +56,8 @@ public class GameManager : MonoBehaviour
     {
         yield return Fader.singleton.FadeOut(1);
         yield return SceneManager.LoadSceneAsync(sceneName);
-        Debug.Log("scene loaded");
         yield return new WaitForSeconds(.5f);
-        Debug.Log("have waited");
         yield return Fader.singleton.FadeIn(1);
-        Debug.Log("fade should be done");
     }
     public void RaiseAffinity(string characterName)
     {
