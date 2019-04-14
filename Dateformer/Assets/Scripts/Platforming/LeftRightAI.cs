@@ -8,7 +8,6 @@ using UnityEngine;
 /// </summary>
 
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(BoxCollider2D))]
 public class LeftRightAI : MonoBehaviour
 {
     public LayerMask groundLayerMask; 
