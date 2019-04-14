@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1767764284341488616}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.6108975, y: -2.9502647, z: -0.039630502}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3511, y: 0.3511, z: 0.3511}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -94,8 +94,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13814d74e9911734dbecd177a932bcc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
   speed: 300
   jump: 5
+<<<<<<< HEAD
+  groundCheck: 0.5
+=======
+>>>>>>> bf6228ad9c2cae475757eaff3d3f8408fec58411
 --- !u!50 &1767764284341488619
 Rigidbody2D:
   serializedVersion: 4
@@ -112,7 +119,11 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
+<<<<<<< HEAD
+  m_Material: {fileID: 6200000, guid: 5c40ebf28c296ab4fae2c794f9028ebd, type: 2}
+=======
   m_Material: {fileID: 6200000, guid: 3fb74049532298e49a538ddf3f8de504, type: 2}
+>>>>>>> bf6228ad9c2cae475757eaff3d3f8408fec58411
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114867818917429990}
+<<<<<<< HEAD
   - {fileID: 114236911668315238}
   EditorEvents:
   - {fileID: 114269903167406918}
@@ -22,6 +23,16 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 114867818917429990}
   stringsBankWriteTime: 636907761658306042
+=======
+  - {fileID: 114708859387070522}
+  EditorEvents:
+  - {fileID: 114269903167406918}
+  MasterBanks:
+  - {fileID: 114708859387070522}
+  StringsBanks:
+  - {fileID: 114867818917429990}
+  stringsBankWriteTime: 636907558822868572
+>>>>>>> 70516e234374e934a06a607580c891e8db9f96dd
   cacheVersion: 3
 --- !u!114 &114236911668315238
 MonoBehaviour:
@@ -58,7 +69,11 @@ MonoBehaviour:
   Path: event:/SFX/Test
   guid: 6c97ecd6636fe44fa062dc5231dc7631
   Banks:
+<<<<<<< HEAD
   - {fileID: 114236911668315238}
+=======
+  - {fileID: 114708859387070522}
+>>>>>>> 70516e234374e934a06a607580c891e8db9f96dd
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -105,7 +120,31 @@ MonoBehaviour:
   FileSizes:
   - Name: 
     Value: 104192
+<<<<<<< HEAD
   Exists: 0
+=======
+  Exists: 1
+--- !u!114 &114708859387070522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\drfro\Documents\Dateformer\Dateformer\Assets\StreamingAssets\Master
+    Bank.bank
+  lastModified: 636907558822838807
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 104192
+  Exists: 1
+>>>>>>> 70516e234374e934a06a607580c891e8db9f96dd
 --- !u!114 &114867818917429990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,7 +158,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\StreamingAssets\Master Bank.strings.bank
+<<<<<<< HEAD
   lastModified: 636907761658306042
+=======
+  lastModified: 636907558822868572
+>>>>>>> 70516e234374e934a06a607580c891e8db9f96dd
   LoadResult: 0
   FileSizes:
   - Name: 
