@@ -17,9 +17,6 @@ public class PlayerMovement : MonoBehaviour
     bool grounded {
         get
         {
-<<<<<<< HEAD
-            return Physics2D.Raycast(transform.position, Vector2.down, groundCheck, groundLayer);
-=======
             float minX = col.bounds.min.x;
             float maxX = col.bounds.max.x;
             float minY = col.bounds.min.y;
@@ -33,7 +30,6 @@ public class PlayerMovement : MonoBehaviour
             }
 
             return false;
->>>>>>> bf6228ad9c2cae475757eaff3d3f8408fec58411
         }
     }
 
