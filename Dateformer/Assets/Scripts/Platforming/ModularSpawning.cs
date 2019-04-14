@@ -54,15 +54,15 @@ public class ModularSpawning : MonoBehaviour
         {
             if (affinities[i] == orderedAffinities[0] && spawnLowestAffinity)
             {
-                choices.Add(i);
+                choices.Add(spawnable[i]);
             }
-            else if (affinities[i] == orderedAffinities[1] && spawnMiddleAffinity)
+            else if (affinities[i] == orderedAffinities[Mathf.Max(0, affinities.Count - 2)] && spawnMiddleAffinity)
             {
-                choices.Add(i);
+                choices.Add(spawnable[i]);
             }
-            else if (affinities[i] == orderedAffinities[2] && spawnHighestAffinity)
+            else if (affinities[i] == orderedAffinities[affinities.Count - 1] && spawnHighestAffinity)
             {
-                choices.Add(i);
+                choices.Add(spawnable[i]);
             }
         }
 
