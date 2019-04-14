@@ -7,16 +7,18 @@ using UnityEngine;
 /// </summary>
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] LayerMask groundLayer; 
     [SerializeField] float speed;
     [SerializeField] float jump;
     [SerializeField] float groundCheck;
 
+    
     bool jumping = false;
     float horizontal = 0;
     bool grounded {
         get
         {
-            return Physics2D.Raycast(transform.position, Vector2.down, groundCheck, 1 << 8);
+            return Physics2D.Raycast(transform.position, Vector2.down, groundCheck, groundLayer);
         }
     }
 
