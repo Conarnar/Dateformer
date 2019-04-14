@@ -103,6 +103,7 @@ MonoBehaviour:
   jumpHoldDuration: 0
   spriteRen: {fileID: 0}
   path: event:/SFX/jump
+  music: event:/Music/Platformer
 --- !u!50 &5422938587387513309
 Rigidbody2D:
   serializedVersion: 4
