@@ -680,7 +680,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[4].isEndLine
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -700,7 +700,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: choices.Array.data[0].choice2Text
-      value: You're right, you're just TOO good.
+      value: You're right, I'm not good enough...
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -1221,6 +1221,11 @@ PrefabInstance:
       propertyPath: characterLines.Array.data[21].closeRoute
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[4].closeRoute
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1935758564172193538, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1358,7 +1363,7 @@ PrefabInstance:
     - target: {fileID: 1001727418144556602, guid: 6c6edc8fe9f948547b87d7026adb0e75,
         type: 3}
       propertyPath: m_FontData.m_FontStyle
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1001727418144556602, guid: 6c6edc8fe9f948547b87d7026adb0e75,
         type: 3}
