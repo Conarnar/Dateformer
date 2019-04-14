@@ -11,12 +11,15 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] float jump;
     [SerializeField] float jumpHoldDuration;
-
+    [SerializeField] SpriteRenderer spriteRen;
+    Animator anim;
     
     bool jumping = false;
     bool jumpHolding = false;
     float jumpHeld = 0;
     float horizontal = 0;
+
+    public string path; //For calling correct Fmod Event.
 
     bool grounded {
         get
@@ -46,6 +49,8 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
+        anim = GetComponent<Animator>();
+        spriteRen = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -61,12 +66,16 @@ public class PlayerMovement : MonoBehaviour
         if (jumping && grounded)
         {
             jumpHeld += Time.fixedDeltaTime;
+
+            FMODUnity.RuntimeManager.PlayOneShot(path, GetComponent<Transform>().position); //Play Jump Sound
         }
         else {
             if (jumpHolding && jumpHeld < jumpHoldDuration)
             {
                 jumpHeld += Time.fixedDeltaTime;
                 jumping = true;
+
+
             }
             else
             {
@@ -74,8 +83,12 @@ public class PlayerMovement : MonoBehaviour
                 jumpHeld = grounded ? 0 : jumpHoldDuration;
             }
         }
-
+        anim.SetBool("isGrounded", grounded);
+        anim.SetFloat("horizontal", Mathf.Abs(horizontal));
+        if(horizontal != 0)
+            spriteRen.flipX = (horizontal < 0);
         rb.velocity = new Vector2(horizontal * speed * Time.fixedDeltaTime, jumping ? jump : rb.velocity.y);
+        anim.SetFloat("vertical", rb.velocity.y);
         jumping = false;
     }
 }

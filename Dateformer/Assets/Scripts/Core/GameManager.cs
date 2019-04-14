@@ -15,7 +15,9 @@ public class GameManager : MonoBehaviour
     public Affinity bulletAffinity = new Affinity();
     public Affinity enemyAffinity = new Affinity();
 
+    public int stageIndex = 1;
 
+    GameObject pauseScreen; 
     private void Awake()
     {
         if (singleton != null)
@@ -26,21 +28,25 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
         }
     }
+    private void Start()
+    {
+        pauseScreen = GameObject.FindGameObjectWithTag("PauseScreen"); 
+    }
 
     public void TransitionEvent(string enemyName)
     {
         string sceneToLoad;
         switch (enemyName)
         {
-            case "Spike-chan":
+            case "Spike":
                 sceneToLoad = "SpikeEvent" + (spikeAffinity.affinityLevel + 1);
                 Transition(sceneToLoad);
                 break;
-            case "Turtle-chan":
+            case "Turtle":
                 sceneToLoad = "TurtleEvent" + (enemyAffinity.affinityLevel + 1);
                 Transition(sceneToLoad);
                 break;
-            case "Bullet-chan":
+            case "Bullet":
                 sceneToLoad = "BulletEvent" + (bulletAffinity.affinityLevel + 1);
                 Transition(sceneToLoad);
                 break;
@@ -57,19 +63,19 @@ public class GameManager : MonoBehaviour
         yield return Fader.singleton.FadeOut(1);
         yield return SceneManager.LoadSceneAsync(sceneName);
         yield return new WaitForSeconds(.5f);
-        yield return Fader.singleton.FadeIn(1);
+        yield return Fader.singleton.FadeIn(1); 
     }
     public void RaiseAffinity(string characterName)
     {
         switch (characterName)
         {
-            case "Spike-chan":
+            case "Spike":
                 spikeAffinity.affinityLevel++;
                 break;
-            case "Turtle-chan":
+            case "Turtle":
                 enemyAffinity.affinityLevel++;
                 break;
-            case "Bullet-chan":
+            case "Bullet":
                 bulletAffinity.affinityLevel++;
                 break;
         }
@@ -79,33 +85,33 @@ public class GameManager : MonoBehaviour
     {
         switch (characterName)
         {
-            case "Spike-chan":
+            case "Spike":
                 spikeAffinity.hasBeenClosed = true;
                 break;
-            case "Turtle-chan":
+            case "Turtle":
                 enemyAffinity.hasBeenClosed = true;
                 break;
-            case "Bullet-chan":
+            case "Bullet":
                 bulletAffinity.hasBeenClosed = true;
                 break;
         }
     }
+
+    public void TransitionNextLevel()
+    {
+        stageIndex++;
+        if (stageIndex > 1)
+            stageIndex = 0;
+        string stageLevel = "Stage" + (stageIndex + 1);
+        Transition(stageLevel);
+    }
+
     public void restart()
     {
         //restarts the game
         spikeAffinity = new Affinity();
         bulletAffinity = new Affinity();
         enemyAffinity = new Affinity();
-        SceneManager.LoadScene(0); 
-    }
-
-    public void loadScene(string sceneName)
-    {
-        SceneManager.LoadScene(SceneManager.GetSceneByName(sceneName).buildIndex); 
-    }
-    public void loadScene(int buildIndex)
-    {
-        SceneManager.LoadScene(buildIndex);
     }
 
     [System.Serializable]
@@ -113,5 +119,32 @@ public class GameManager : MonoBehaviour
     {
         public int affinityLevel = 0;
         public bool hasBeenClosed = false;
+    }
+
+    private void Update()
+    {
+        //pause
+        if (Input.GetButtonDown("Cancel"))
+        {
+            if (Time.timeScale == 0f)
+            {
+                Time.timeScale = 1f;
+                if (pauseScreen != null)
+                {
+                    pauseScreen.SetActive(false);
+                }
+            }
+            else {
+                Time.timeScale = 0f;
+                if (pauseScreen != null)
+                {
+                    pauseScreen.SetActive(true);
+                }
+            }
+                
+        }
+
+
+
     }
 }

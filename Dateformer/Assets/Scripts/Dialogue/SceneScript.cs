@@ -5,7 +5,7 @@ using UnityEngine;
 public class SceneScript : MonoBehaviour
 {
     public Character character;
-
+    [SerializeField] bool isEndEvent = false;
     [SerializeField] string sceneToLoad;
     [SerializeField] int dialogueIndex = 0;
     [SerializeField] bool additive = false;
@@ -57,7 +57,10 @@ public class SceneScript : MonoBehaviour
                         GameManager.singleton.RaiseAffinity(character.characterName);
 
                     endTriggered = true;
-                    GameManager.singleton.Transition(sceneToLoad);
+                    if (isEndEvent)
+                        GameManager.singleton.Transition(sceneToLoad);
+                    else
+                        GameManager.singleton.TransitionNextLevel();
                     return;
                 }
                 character.Say(characterLines[dialogueIndex].dialogue);
