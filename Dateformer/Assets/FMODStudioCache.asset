@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114544536128876310}
-  - {fileID: 114257499238169280}
+  - {fileID: 114040125398712008}
+  - {fileID: 114498982982795956}
   EditorEvents:
-  - {fileID: 114497015740805148}
+  - {fileID: 114223629618601474}
   MasterBanks:
-  - {fileID: 114257499238169280}
+  - {fileID: 114498982982795956}
   StringsBanks:
-  - {fileID: 114544536128876310}
-  stringsBankWriteTime: 636907787940165813
+  - {fileID: 114040125398712008}
+  stringsBankWriteTime: 636907509985866413
   cacheVersion: 3
---- !u!114 &114257499238169280
+--- !u!114 &114040125398712008
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -35,14 +35,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: D:\Documents\Unity\Dateformer\Dateformer\Assets\StreamingAssets\Master Bank.bank
-  lastModified: 636907787940313200
+  Path: Assets\StreamingAssets\Master Bank.strings.bank
+  lastModified: 636907509985866413
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 104192
+    Value: 718
   Exists: 1
---- !u!114 &114497015740805148
+--- !u!114 &114223629618601474
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -57,7 +57,7 @@ MonoBehaviour:
   Path: event:/SFX/Test
   guid: 6c97ecd6636fe44fa062dc5231dc7631
   Banks:
-  - {fileID: 114257499238169280}
+  - {fileID: 114498982982795956}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -65,7 +65,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 10663
---- !u!114 &114544536128876310
+--- !u!114 &114498982982795956
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -77,10 +77,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: Assets\StreamingAssets\Master Bank.strings.bank
-  lastModified: 636907787940165813
+  Path: D:\milic\Unity Projects\Dateformer\Dateformer\Assets\StreamingAssets\Master
+    Bank.bank
+  lastModified: 636907509985846342
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 718
+    Value: 104192
   Exists: 1
