@@ -49,4 +49,4 @@ public class Character : MonoBehaviour
 
 }
 
-public enum Mood { neutral, happy, sad, blush, angry};
+public enum Mood { neutral, happy, sad, blush, angry, special};
