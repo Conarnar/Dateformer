@@ -1000,6 +1000,16 @@ PrefabInstance:
       propertyPath: characterLines.Array.data[14].currentMood
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[10].choiceIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[14].choiceIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1935758564172193538, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1112,7 +1122,7 @@ PrefabInstance:
     - target: {fileID: 3371449829534988368, guid: 6c6edc8fe9f948547b87d7026adb0e75,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3371449829977511776, guid: 6c6edc8fe9f948547b87d7026adb0e75,
         type: 3}

@@ -58,9 +58,9 @@ public class SceneScript : MonoBehaviour
                 character.SetSprite((int)characterLines[dialogueIndex].currentMood);
                 if (characterLines[dialogueIndex].promptForResponse)
                 {
+                    choiceIndex = characterLines[dialogueIndex].choiceIndex;
                     character.dialogue.PromptForAnswer(choices[choiceIndex].choice1Text, choices[choiceIndex].choice2Text, choices[choiceIndex].choice1NextIndex, choices[choiceIndex].choice2NextIndex);
-                    character.dialogue.isWaitingForResponse = true;
-                    choiceIndex++;
+                    character.dialogue.isWaitingForResponse = true;     
                     return;
                 }
                 if(!characterLines[dialogueIndex].isEndLine)
@@ -81,9 +81,9 @@ public class SceneScript : MonoBehaviour
             dialogueIndex = characterLines[dialogueIndex].nextDialogueIndex;
         if (characterLines[dialogueIndex].promptForResponse)
         {
+            choiceIndex = characterLines[dialogueIndex].choiceIndex;
             character.dialogue.PromptForAnswer(choices[choiceIndex].choice1Text, choices[choiceIndex].choice2Text, choices[choiceIndex].choice1NextIndex, choices[choiceIndex].choice2NextIndex);
             character.dialogue.isWaitingForResponse = true;
-            choiceIndex++;
             return;
         }
     }
@@ -100,9 +100,9 @@ public class SceneScript : MonoBehaviour
 
         if (characterLines[dialogueIndex].promptForResponse)
         {
+            choiceIndex = characterLines[dialogueIndex].choiceIndex;
             character.dialogue.PromptForAnswer(choices[choiceIndex].choice1Text, choices[choiceIndex].choice2Text, choices[choiceIndex].choice1NextIndex, choices[choiceIndex].choice2NextIndex);
             character.dialogue.isWaitingForResponse = true;
-            choiceIndex++;
             return;
         }
     }
@@ -114,6 +114,7 @@ public class SceneScript : MonoBehaviour
         public string dialogue;
         public Mood currentMood;
         public bool promptForResponse;
+        public int choiceIndex;
         public bool isEndLine;
         public bool closeRoute = false;
     }
