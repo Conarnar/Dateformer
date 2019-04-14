@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Visual Novel/TurtleEvent4.unity
     guid: 89499251070c0da4b91777f4fe4e55f4
+  - enabled: 1
+    path: Assets/Scenes/Platformer Stages/Stage2.unity
+    guid: f24f220aa3c260148ba1c5d726ed72fd
   m_configObjects: {}

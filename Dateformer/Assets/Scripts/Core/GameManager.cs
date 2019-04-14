@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     public Affinity bulletAffinity = new Affinity();
     public Affinity enemyAffinity = new Affinity();
 
+    public int stageIndex = 1;
+
     GameObject pauseScreen; 
     private void Awake()
     {
@@ -36,15 +38,15 @@ public class GameManager : MonoBehaviour
         string sceneToLoad;
         switch (enemyName)
         {
-            case "Spike-chan":
+            case "Spike":
                 sceneToLoad = "SpikeEvent" + (spikeAffinity.affinityLevel + 1);
                 Transition(sceneToLoad);
                 break;
-            case "Turtle-chan":
+            case "Turtle":
                 sceneToLoad = "TurtleEvent" + (enemyAffinity.affinityLevel + 1);
                 Transition(sceneToLoad);
                 break;
-            case "Bullet-chan":
+            case "Bullet":
                 sceneToLoad = "BulletEvent" + (bulletAffinity.affinityLevel + 1);
                 Transition(sceneToLoad);
                 break;
@@ -83,19 +85,27 @@ public class GameManager : MonoBehaviour
     {
         switch (characterName)
         {
-            case "Spike-chan":
+            case "Spike":
                 spikeAffinity.hasBeenClosed = true;
                 break;
-            case "Turtle-chan":
+            case "Turtle":
                 enemyAffinity.hasBeenClosed = true;
                 break;
-            case "Bullet-chan":
+            case "Bullet":
                 bulletAffinity.hasBeenClosed = true;
                 break;
         }
     }
 
-    
+    public void TransitionNextLevel()
+    {
+        stageIndex++;
+        if (stageIndex > 1)
+            stageIndex = 0;
+        string stageLevel = "Stage" + (stageIndex + 1);
+        Transition(stageLevel);
+    }
+
     public void restart()
     {
         //restarts the game
