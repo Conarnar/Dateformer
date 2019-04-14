@@ -17,15 +17,13 @@ public class PlayerMovement : MonoBehaviour
     bool grounded {
         get
         {
-<<<<<<< HEAD
-            return Physics2D.Raycast(transform.position, Vector2.down, groundCheck, groundLayer);
-=======
             float minX = col.bounds.min.x;
             float maxX = col.bounds.max.x;
             float minY = col.bounds.min.y;
             
             for (int i = 0; i < 5; i++)
             {
+                Debug.DrawLine(new Vector2(Mathf.Lerp(minX, maxX, i / 4f), minY), new Vector2(Mathf.Lerp(minX, maxX, i / 4f), minY - 0.1f), Color.red);
                 if (Physics2D.Raycast(new Vector2(Mathf.Lerp(minX, maxX, i / 4f), minY), Vector2.down, 0.1f, 1 << 8))
                 {
                     return true;
@@ -33,7 +31,6 @@ public class PlayerMovement : MonoBehaviour
             }
 
             return false;
->>>>>>> bf6228ad9c2cae475757eaff3d3f8408fec58411
         }
     }
 
@@ -50,12 +47,13 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        jumping = Input.GetButtonDown("Jump");
+        jumping = jumping || Input.GetButtonDown("Jump");
         horizontal = Input.GetAxis("Horizontal");
     }
 
     void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * speed * Time.fixedDeltaTime, (jumping && grounded) ? jump : rb.velocity.y);
+        jumping = false;
     }
 }
