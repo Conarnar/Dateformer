@@ -82,6 +82,7 @@ public class PlayerMovement : MonoBehaviour
         if(horizontal != 0)
             spriteRen.flipX = (horizontal < 0);
         rb.velocity = new Vector2(horizontal * speed * Time.fixedDeltaTime, jumping ? jump : rb.velocity.y);
+        anim.SetFloat("vertical", rb.velocity.y);
         jumping = false;
     }
 }
