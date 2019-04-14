@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114117542933716992}
-  - {fileID: 114697628851960346}
+  - {fileID: 114496820425636818}
   EditorEvents:
   - {fileID: 114654040310123640}
   - {fileID: 114507393496371540}
@@ -31,10 +31,10 @@ MonoBehaviour:
   - {fileID: 114854209960408930}
   - {fileID: 114676062631981056}
   MasterBanks:
-  - {fileID: 114697628851960346}
+  - {fileID: 114496820425636818}
   StringsBanks:
   - {fileID: 114117542933716992}
-  stringsBankWriteTime: 636908489503069208
+  stringsBankWriteTime: 636908543893234580
   cacheVersion: 3
 --- !u!114 &114010307441423610
 MonoBehaviour:
@@ -71,7 +71,7 @@ MonoBehaviour:
   Path: event:/SFX/Emotions/blushing
   guid: 35b5c289b041ee47837411e6fcd51f37
   Banks:
-  - {fileID: 114697628851960346}
+  - {fileID: 114496820425636818}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\StreamingAssets\Master Bank.strings.bank
-  lastModified: 636908489503069208
+  lastModified: 636908543893234580
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -113,7 +113,7 @@ MonoBehaviour:
   Path: event:/Music/Platformer
   guid: 59f654cdfb5cc94aa6a30fe2cd2fc167
   Banks:
-  - {fileID: 114697628851960346}
+  - {fileID: 114496820425636818}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -136,7 +136,7 @@ MonoBehaviour:
   Path: event:/SFX/normal_death
   guid: 312944cfeddb234bab32567f39648e9b
   Banks:
-  - {fileID: 114697628851960346}
+  - {fileID: 114496820425636818}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -144,6 +144,25 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1394
+--- !u!114 &114496820425636818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\GitHub\Dateformer\Dateformer\Dateformer\Assets\StreamingAssets\Master Bank.bank
+  lastModified: 636908548644351841
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 1522944
+  Exists: 1
 --- !u!114 &114507393496371540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,7 +178,7 @@ MonoBehaviour:
   Path: event:/SFX/jump
   guid: 08d7ba29005cb34382ac600ebe2ef540
   Banks:
-  - {fileID: 114697628851960346}
+  - {fileID: 114496820425636818}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -182,7 +201,7 @@ MonoBehaviour:
   Path: event:/SFX/select
   guid: 28529b64bd744c4d8bb52bbca4b99c28
   Banks:
-  - {fileID: 114697628851960346}
+  - {fileID: 114496820425636818}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -205,7 +224,7 @@ MonoBehaviour:
   Path: event:/SFX/bullet
   guid: 1ee42a282396944692ab481930f253da
   Banks:
-  - {fileID: 114697628851960346}
+  - {fileID: 114496820425636818}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -228,7 +247,7 @@ MonoBehaviour:
   Path: event:/SFX/Emotions/happy
   guid: 07800b99a24547488dee85d2ebc0c19c
   Banks:
-  - {fileID: 114697628851960346}
+  - {fileID: 114496820425636818}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -251,7 +270,7 @@ MonoBehaviour:
   Path: event:/SFX/scrolling
   guid: a22907b7ee4ff245b62a244c3f4b72a0
   Banks:
-  - {fileID: 114697628851960346}
+  - {fileID: 114496820425636818}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -274,7 +293,7 @@ MonoBehaviour:
   Path: event:/Music/Woooooo
   guid: f634bce652704946a0ded0435c8b61c9
   Banks:
-  - {fileID: 114697628851960346}
+  - {fileID: 114496820425636818}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -316,7 +335,7 @@ MonoBehaviour:
   Path: event:/SFX/Emotions/sad
   guid: ab5ced98b217ca4688153b2ce8c7481a
   Banks:
-  - {fileID: 114697628851960346}
+  - {fileID: 114496820425636818}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -339,7 +358,7 @@ MonoBehaviour:
   Path: event:/SFX/transition
   guid: 1e23fbbf48aa2047afc5c8c41c456ce4
   Banks:
-  - {fileID: 114697628851960346}
+  - {fileID: 114496820425636818}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -362,7 +381,7 @@ MonoBehaviour:
   Path: event:/SFX/Emotions/shocked
   guid: d09724189a15ce46ab3481cb2f25d2ee
   Banks:
-  - {fileID: 114697628851960346}
+  - {fileID: 114496820425636818}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -385,7 +404,7 @@ MonoBehaviour:
   Path: event:/SFX/Emotions/angry
   guid: de6677a58b166042870d0a4912483f95
   Banks:
-  - {fileID: 114697628851960346}
+  - {fileID: 114496820425636818}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -428,7 +447,7 @@ MonoBehaviour:
   Path: event:/SFX/test
   guid: 6c97ecd6636fe44fa062dc5231dc7631
   Banks:
-  - {fileID: 114697628851960346}
+  - {fileID: 114496820425636818}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
