@@ -9,7 +9,7 @@ public class SceneLoading : MonoBehaviour
 
     public void loadScene(string sceneName)
     {
-        SceneManager.LoadScene(SceneManager.GetSceneByName(sceneName).buildIndex);
+        GameManager.singleton.Transition(sceneName);
     }
     public void loadScene(int buildIndex)
     {
@@ -22,7 +22,7 @@ public class SceneLoading : MonoBehaviour
         {
             GameManager.singleton.restart(); 
         }
-        loadScene(0);
+        loadScene("_Main_Menu");
 
     }
 
