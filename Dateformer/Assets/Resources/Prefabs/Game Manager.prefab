@@ -52,4 +52,4 @@ MonoBehaviour:
   enemyAffinity:
     affinityLevel: 0
     hasBeenClosed: 0
-  pauseScreen: {fileID: 0}
+  stageIndex: 0
