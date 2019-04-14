@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     float jumpHeld = 0;
     float horizontal = 0;
 
+    public string path; //For calling correct Fmod Event.
+
     bool grounded {
         get
         {
@@ -64,12 +66,16 @@ public class PlayerMovement : MonoBehaviour
         if (jumping && grounded)
         {
             jumpHeld += Time.fixedDeltaTime;
+
+            FMODUnity.RuntimeManager.PlayOneShot(path, GetComponent<Transform>().position); //Play Jump Sound
         }
         else {
             if (jumpHolding && jumpHeld < jumpHoldDuration)
             {
                 jumpHeld += Time.fixedDeltaTime;
                 jumping = true;
+
+
             }
             else
             {
@@ -82,6 +88,7 @@ public class PlayerMovement : MonoBehaviour
         if(horizontal != 0)
             spriteRen.flipX = (horizontal < 0);
         rb.velocity = new Vector2(horizontal * speed * Time.fixedDeltaTime, jumping ? jump : rb.velocity.y);
+        anim.SetFloat("vertical", rb.velocity.y);
         jumping = false;
     }
 }

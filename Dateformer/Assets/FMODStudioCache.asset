@@ -13,55 +13,17 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114040125398712008}
-  - {fileID: 114199265895078782}
+  - {fileID: 114357778717933084}
+  - {fileID: 114706180979656176}
   EditorEvents:
-  - {fileID: 114223629618601474}
+  - {fileID: 114053250586453436}
   MasterBanks:
-  - {fileID: 114199265895078782}
+  - {fileID: 114706180979656176}
   StringsBanks:
-  - {fileID: 114040125398712008}
-  stringsBankWriteTime: 636907787940165813
+  - {fileID: 114357778717933084}
+  stringsBankWriteTime: 636907495100118894
   cacheVersion: 3
---- !u!114 &114040125398712008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: Assets\StreamingAssets\Master Bank.strings.bank
-  lastModified: 636907787940165813
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 718
-  Exists: 1
---- !u!114 &114199265895078782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: D:\Documents\Unity\Dateformer\Dateformer\Assets\StreamingAssets\Master Bank.bank
-  lastModified: 636907787940313200
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 104192
-  Exists: 1
---- !u!114 &114223629618601474
+--- !u!114 &114053250586453436
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -76,7 +38,7 @@ MonoBehaviour:
   Path: event:/SFX/Test
   guid: 6c97ecd6636fe44fa062dc5231dc7631
   Banks:
-  - {fileID: 114199265895078782}
+  - {fileID: 114706180979656176}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -84,7 +46,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 10663
---- !u!114 &114498982982795956
+--- !u!114 &114220096857400516
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,9 +58,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: D:\milic\Unity Projects\Dateformer\Dateformer\Assets\StreamingAssets\Master
+  Path: C:\Users\drfro\Documents\Dateformer\Dateformer\Assets\StreamingAssets\Master
     Bank.bank
-  lastModified: 636907509985846342
+  lastModified: 636907558822838807
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 104192
+  Exists: 1
+--- !u!114 &114357778717933084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: Assets\StreamingAssets\Master Bank.strings.bank
+  lastModified: 636907495100118894
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 718
+  Exists: 1
+--- !u!114 &114706180979656176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\GitHub\Dateformer\Dateformer\Dateformer\Assets\StreamingAssets\Master Bank.bank
+  lastModified: 636907495100040259
   LoadResult: 0
   FileSizes:
   - Name: 

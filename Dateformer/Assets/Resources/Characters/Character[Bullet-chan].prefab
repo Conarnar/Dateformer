@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14c694da6357a11418579a21b70d565c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: Bullet-chan
+  characterName: Bullet
   root: {fileID: 0}
   renderer: {fileID: 0}
   images:
