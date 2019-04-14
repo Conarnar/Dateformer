@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b75dcbda2e5d954e9fd7b3ef295b4e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: Bullet-chan
+  enemyName: Bullet
 --- !u!114 &1932615774278140920
 MonoBehaviour:
   m_ObjectHideFlags: 0

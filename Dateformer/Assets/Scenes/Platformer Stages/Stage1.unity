@@ -1107,6 +1107,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3447606476171961167, guid: 3e2ebb784332ee942acdcfd5ac75a1bb,
         type: 3}
+<<<<<<< HEAD
       propertyPath: spikeAffinity.hasBeenClosed
       value: 0
       objectReference: {fileID: 0}
@@ -1118,6 +1119,9 @@ PrefabInstance:
     - target: {fileID: 3447606476171961167, guid: 3e2ebb784332ee942acdcfd5ac75a1bb,
         type: 3}
       propertyPath: enemyAffinity.hasBeenClosed
+=======
+      propertyPath: stageIndex
+>>>>>>> 2ba36a70b7b808ee7210c40fa9bb386c5b064b33
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1364,16 +1368,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1270362227887382698, guid: ce332d040d34c414c94b35e88cc5a294,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270362227887382698, guid: ce332d040d34c414c94b35e88cc5a294,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7454397827329899767, guid: ce332d040d34c414c94b35e88cc5a294,
         type: 3}
       propertyPath: m_Layer
@@ -1383,6 +1377,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270362227887382698, guid: ce332d040d34c414c94b35e88cc5a294,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270362227887382698, guid: ce332d040d34c414c94b35e88cc5a294,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5510462146751108060, guid: ce332d040d34c414c94b35e88cc5a294,
         type: 3}
