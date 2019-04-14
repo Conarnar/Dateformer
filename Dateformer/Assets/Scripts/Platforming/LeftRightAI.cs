@@ -37,6 +37,7 @@ public class LeftRightAI : MonoBehaviour
         Debug.DrawLine( groundCheckLeft.position, (Vector2)groundCheckLeft.position + Vector2.down); 
         RaycastHit2D rightCheck = Physics2D.Linecast(groundCheckRight.position, (Vector2)groundCheckRight.position + Vector2.down, groundLayerMask);
         Debug.DrawLine(groundCheckRight.position, (Vector2)groundCheckRight.position + Vector2.down);
+        Debug.Log(leftCheck.collider + " " + rightCheck.collider); 
 
         if (leftCheck.collider == null || !leftCheck.collider.CompareTag("Ground"))
         {
