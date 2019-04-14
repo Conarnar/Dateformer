@@ -49661,18 +49661,6 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[1541].second.m_ColliderType
       value: 1
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-    - target: {fileID: 3721513145459021437, guid: ce332d040d34c414c94b35e88cc5a294,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3721513145459021437, guid: ce332d040d34c414c94b35e88cc5a294,
-        type: 3}
-      propertyPath: m_UsedByComposite
-      value: 1
-      objectReference: {fileID: 0}
-=======
     - target: {fileID: 5510462146751108060, guid: ce332d040d34c414c94b35e88cc5a294,
         type: 3}
       propertyPath: m_TileAssetArray.Array.data[8].m_RefCount
@@ -50198,7 +50186,6 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[148].second.m_TileSpriteIndex
       value: 16
       objectReference: {fileID: 0}
->>>>>>> 2fb69ddb4cfe7cf55e5d7712ea5e7fe545aba504
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce332d040d34c414c94b35e88cc5a294, type: 3}
 --- !u!1001 &255164000
