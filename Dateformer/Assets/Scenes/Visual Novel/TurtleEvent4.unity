@@ -595,7 +595,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: sceneToLoad
-      value: Level Implementation
+      value: _Game_Over
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -1382,6 +1382,11 @@ PrefabInstance:
       propertyPath: characterLines.Array.data[8].closeRoute
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: isEndEvent
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1935758564172193538, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1773,6 +1778,11 @@ PrefabInstance:
     - target: {fileID: 3447606476171961164, guid: 3e2ebb784332ee942acdcfd5ac75a1bb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3447606476171961167, guid: 3e2ebb784332ee942acdcfd5ac75a1bb,
+        type: 3}
+      propertyPath: stageIndex
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

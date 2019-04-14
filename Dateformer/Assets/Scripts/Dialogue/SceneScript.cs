@@ -57,10 +57,10 @@ public class SceneScript : MonoBehaviour
                         GameManager.singleton.RaiseAffinity(character.characterName);
 
                     endTriggered = true;
-                    if (isEndEvent)
-                        GameManager.singleton.Transition(sceneToLoad);
-                    else
+                    if (!isEndEvent || GameManager.singleton.GetAffinity(character.characterName).hasBeenClosed)
                         GameManager.singleton.TransitionNextLevel();
+                    else
+                        GameManager.singleton.Transition(sceneToLoad);
                     return;
                 }
                 character.Say(characterLines[dialogueIndex].dialogue);
