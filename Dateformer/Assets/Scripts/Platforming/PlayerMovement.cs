@@ -53,7 +53,6 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        GetComponent<SpriteRenderer>().color = grounded ? Color.white : Color.black;
         rb.velocity = new Vector2(horizontal * speed * Time.fixedDeltaTime, (jumping && grounded) ? jump : rb.velocity.y);
         jumping = false;
     }
