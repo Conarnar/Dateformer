@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
         yield return Fader.singleton.FadeOut(1);
         yield return SceneManager.LoadSceneAsync(sceneName);
         yield return new WaitForSeconds(.5f);
-        yield return Fader.singleton.FadeIn(1);
+        yield return Fader.singleton.FadeIn(1); 
     }
     public void RaiseAffinity(string characterName)
     {
@@ -90,22 +90,14 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
+
+    
     public void restart()
     {
         //restarts the game
         spikeAffinity = new Affinity();
         bulletAffinity = new Affinity();
         enemyAffinity = new Affinity();
-        SceneManager.LoadScene(0); 
-    }
-
-    public void loadScene(string sceneName)
-    {
-        SceneManager.LoadScene(SceneManager.GetSceneByName(sceneName).buildIndex); 
-    }
-    public void loadScene(int buildIndex)
-    {
-        SceneManager.LoadScene(buildIndex);
     }
 
     [System.Serializable]
