@@ -15,6 +15,8 @@ public class LeftRightAI : MonoBehaviour
     public float speed;
     bool movingLeft;
 
+    public float pause = 0;
+
     Rigidbody2D rb;
     Vector2 velocity; 
     private void Awake()
@@ -27,7 +29,14 @@ public class LeftRightAI : MonoBehaviour
     {
         checkGround(); 
         velocity = movingLeft ? Vector2.left * speed : Vector2.right * speed;
-        rb.MovePosition(rb.position + velocity * Time.fixedDeltaTime);
+
+        pause -= Time.fixedDeltaTime;
+
+        if (pause < 0)
+        {
+            rb.MovePosition(rb.position + velocity * -pause);
+            pause = 0;
+        }
     }
 
     void checkGround()

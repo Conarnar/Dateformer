@@ -4,16 +4,8 @@ using UnityEngine;
 
 public class ColliderBouncesPlayer : MonoBehaviour
 {
-    public float bounceVelocity; 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
-            rb.velocity = new Vector2(rb.velocity.x, bounceVelocity);  
-        }
-    }
+    public float bounceVelocity;
+    [SerializeField] LeftRightAI ai;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -21,6 +13,7 @@ public class ColliderBouncesPlayer : MonoBehaviour
         {
             Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
             rb.velocity = new Vector2(rb.velocity.x, bounceVelocity);
+            ai.pause = 0.2f;
         }
     }
 }
