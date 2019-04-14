@@ -102,6 +102,7 @@ MonoBehaviour:
   jump: 7
   jumpHoldDuration: 0
   spriteRen: {fileID: 0}
+  path: event:/SFX/jump
 --- !u!50 &5422938587387513309
 Rigidbody2D:
   serializedVersion: 4
