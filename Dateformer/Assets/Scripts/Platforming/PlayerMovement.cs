@@ -11,7 +11,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] float jump;
     [SerializeField] float jumpHoldDuration;
-
+    [SerializeField] SpriteRenderer spriteRen;
+    Animator anim;
     
     bool jumping = false;
     bool jumpHolding = false;
@@ -46,6 +47,8 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
+        anim = GetComponent<Animator>();
+        spriteRen = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -74,7 +77,10 @@ public class PlayerMovement : MonoBehaviour
                 jumpHeld = grounded ? 0 : jumpHoldDuration;
             }
         }
-
+        anim.SetBool("isGrounded", grounded);
+        anim.SetFloat("horizontal", Mathf.Abs(horizontal));
+        if(horizontal != 0)
+            spriteRen.flipX = (horizontal < 0);
         rb.velocity = new Vector2(horizontal * speed * Time.fixedDeltaTime, jumping ? jump : rb.velocity.y);
         jumping = false;
     }
