@@ -96,7 +96,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 300
   jump: 5
-  groundCheck: 0.18
 --- !u!50 &1767764284341488619
 Rigidbody2D:
   serializedVersion: 4
@@ -113,7 +112,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 3fb74049532298e49a538ddf3f8de504, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0

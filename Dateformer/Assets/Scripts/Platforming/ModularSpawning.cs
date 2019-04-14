@@ -12,7 +12,8 @@ public class ModularSpawning : MonoBehaviour
     [SerializeField] GameObject turretPrefab;
     [SerializeField] GameObject turtlePrefab;
 
-    void Awake()
+    // Start is called before the first frame update
+    void Start()
     {
         GameManager manager = GameManager.singleton;
         int[] affinities = new int[] { manager.spikeAffinity.affinityLevel, manager.bulletAffinity.affinityLevel, manager.enemyAffinity.affinityLevel };
@@ -56,12 +57,6 @@ public class ModularSpawning : MonoBehaviour
                 Instantiate(turtlePrefab, transform, false);
                 break;
         }
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame
