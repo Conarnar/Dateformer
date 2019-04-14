@@ -74,6 +74,10 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetSceneByName(sceneName).buildIndex); 
     }
+    public void loadScene(int buildIndex)
+    {
+        SceneManager.LoadScene(buildIndex);
+    }
 
     [System.Serializable]
     public class Affinity
