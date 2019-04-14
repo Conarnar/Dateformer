@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{49780ed9-9d44-45ea-8c7c-83e1128129fb}">
+        <property name="assetPath">
+            <value>blushing.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>1.3793197278911564</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{547be73a-9159-46aa-9b69-6db81b9c06b7}</destination>
+        </relationship>
+    </object>
+</objects>

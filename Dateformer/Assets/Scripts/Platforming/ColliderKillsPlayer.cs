@@ -9,14 +9,13 @@ using UnityEngine;
 public class ColliderKillsPlayer : MonoBehaviour
 {
     public string enemyName;
-    [SerializeField] string sceneToLoad;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("Player died to " + enemyName);
-            GameManager.singleton.Transition(sceneToLoad);
+            GameManager.singleton.TransitionEvent(enemyName);
             collision.gameObject.SetActive(false);
         }
     }
@@ -26,7 +25,7 @@ public class ColliderKillsPlayer : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("Player died to " + enemyName);
-            GameManager.singleton.Transition(sceneToLoad);
+            GameManager.singleton.TransitionEvent(enemyName);
             collision.gameObject.SetActive(false);
         }
     }

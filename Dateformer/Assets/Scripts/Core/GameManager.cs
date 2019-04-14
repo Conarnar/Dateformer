@@ -27,6 +27,26 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void TransitionEvent(string enemyName)
+    {
+        string sceneToLoad;
+        switch (enemyName)
+        {
+            case "Spike-chan":
+                sceneToLoad = "SpikeEvent" + (spikeAffinity.affinityLevel + 1);
+                Transition(sceneToLoad);
+                break;
+            case "Turtle-chan":
+                sceneToLoad = "TurtleEvent" + (enemyAffinity.affinityLevel + 1);
+                Transition(sceneToLoad);
+                break;
+            case "Bullet-chan":
+                sceneToLoad = "BulletEvent" + (bulletAffinity.affinityLevel + 1);
+                Transition(sceneToLoad);
+                break;
+        }
+    }
+
     public void Transition(string sceneName)
     {
         StartCoroutine(FadeTransition(sceneName));
@@ -49,6 +69,12 @@ public class GameManager : MonoBehaviour
             case "Spike-chan":
                 spikeAffinity.affinityLevel++;
                 break;
+            case "Turtle-chan":
+                enemyAffinity.affinityLevel++;
+                break;
+            case "Bullet-chan":
+                bulletAffinity.affinityLevel++;
+                break;
         }
     }
 
@@ -58,6 +84,12 @@ public class GameManager : MonoBehaviour
         {
             case "Spike-chan":
                 spikeAffinity.hasBeenClosed = true;
+                break;
+            case "Turtle-chan":
+                enemyAffinity.hasBeenClosed = true;
+                break;
+            case "Bullet-chan":
+                bulletAffinity.hasBeenClosed = true;
                 break;
         }
     }
