@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14c694da6357a11418579a21b70d565c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: Turtle-chan
+  characterName: Turtle
   root: {fileID: 0}
   renderer: {fileID: 0}
   images:
@@ -66,7 +66,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3b2297e1222b0164b9e4b2f060fd7dbc, type: 3}
   - {fileID: 21300000, guid: 56c8c21f5abc7454cb33362bd6d1e724, type: 3}
   - {fileID: 21300000, guid: f5f19d3b13b3b9e49995029b57eea061, type: 3}
-  - {fileID: 21300000, guid: 1c1926512d7a0bf449fa2ec7e0c01dbc, type: 3}
+  - {fileID: 21300000, guid: ddce07913cbd2b0459152c57ea858c26, type: 3}
   - {fileID: 21300000, guid: 511562bff61c43f449f583df7ab79f98, type: 3}
   dialogue: {fileID: 0}
 --- !u!1 &5885888205395864423

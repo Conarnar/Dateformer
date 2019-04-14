@@ -605,7 +605,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[0].dialogue
-      value: '.....'
+      value: Huh?
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -640,12 +640,12 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[2].dialogue
-      value: Oh stop it..
+      value: Oh! Uhmm...
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[2].currentMood
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -666,7 +666,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[3].currentMood
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -711,7 +711,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: choices.Array.data[0].choice2Text
-      value: I didn't want to. I'm trying my best.
+      value: I didn't want to. Sorry to bother you.
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -918,8 +918,8 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[16].dialogue
-      value: But I uh- maybe I shared too much. I've never talked to somebody so much
-        before.
+      value: But I uh- maybe I shared too much. I've never talked to somebody like
+        this before.
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -999,7 +999,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[0].currentMood
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -1009,7 +1009,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[14].currentMood
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -1079,7 +1079,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: choices.Array.data[3].choice1Text
-      value: No I like talking to you!
+      value: No I like talking with you!
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -1209,7 +1209,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[19].currentMood
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -1244,6 +1244,36 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[23].isEndLine
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[9].currentMood
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[10].currentMood
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[12].currentMood
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[13].currentMood
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[11].currentMood
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[6].currentMood
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1935758564172193538, guid: e648c959d716e9f418345b0294157933,

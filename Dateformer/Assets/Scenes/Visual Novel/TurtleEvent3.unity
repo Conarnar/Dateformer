@@ -615,7 +615,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[1].currentMood
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -650,7 +650,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[3].dialogue
-      value: No, it's okay, I'll just be on my way.
+      value: No, it's okay, I'll just be on my way...
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -771,7 +771,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[8].dialogue
-      value: Wait that's not a poem...
+      value: Huh? That's not a poem.
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -991,7 +991,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[8].currentMood
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -1066,7 +1066,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: choices.Array.data[3].choice1Text
-      value: What's wrong with being shy?
+      value: There's nothing wrong with being shy.
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -1216,7 +1216,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[9].currentMood
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -1236,7 +1236,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[13].currentMood
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -1316,7 +1316,7 @@ PrefabInstance:
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
       propertyPath: characterLines.Array.data[24].dialogue
-      value: I'll just go leave you alone now.
+      value: I'll just go leave you alone now...
       objectReference: {fileID: 0}
     - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
         type: 3}
@@ -1367,6 +1367,11 @@ PrefabInstance:
         type: 3}
       propertyPath: characterLines.Array.data[16].currentMood
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935758562879752141, guid: e648c959d716e9f418345b0294157933,
+        type: 3}
+      propertyPath: characterLines.Array.data[9].closeRoute
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1935758564172193538, guid: e648c959d716e9f418345b0294157933,
         type: 3}
