@@ -1036,6 +1036,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Platform Tileset
       objectReference: {fileID: 0}
+    - target: {fileID: 7454397827329899767, guid: ce332d040d34c414c94b35e88cc5a294,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454397827329899767, guid: ce332d040d34c414c94b35e88cc5a294,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721513145459021437, guid: ce332d040d34c414c94b35e88cc5a294,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721513145459021437, guid: ce332d040d34c414c94b35e88cc5a294,
+        type: 3}
+      propertyPath: m_UsedByComposite
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4959399627377265279, guid: ce332d040d34c414c94b35e88cc5a294,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1115,16 +1135,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7454397827329899767, guid: ce332d040d34c414c94b35e88cc5a294,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7454397827329899767, guid: ce332d040d34c414c94b35e88cc5a294,
-        type: 3}
-      propertyPath: m_TagString
-      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5510462146751108060, guid: ce332d040d34c414c94b35e88cc5a294,
         type: 3}
@@ -50612,16 +50622,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300080, guid: 725014f88b57de34da317602eb9703c5,
         type: 3}
-    - target: {fileID: 3721513145459021437, guid: ce332d040d34c414c94b35e88cc5a294,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3721513145459021437, guid: ce332d040d34c414c94b35e88cc5a294,
-        type: 3}
-      propertyPath: m_UsedByComposite
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce332d040d34c414c94b35e88cc5a294, type: 3}
 --- !u!1001 &250540727
@@ -51864,7 +51864,7 @@ PrefabInstance:
     - target: {fileID: 7652157274906410275, guid: 9b1cbf97e15c17e4eba64710b1403a8a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7652157274906410275, guid: 9b1cbf97e15c17e4eba64710b1403a8a,
         type: 3}
@@ -52428,8 +52428,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2114493019}
   - component: {fileID: 2114493018}
-  - component: {fileID: 2114493017}
   - component: {fileID: 2114493020}
+  - component: {fileID: 2114493017}
+  - component: {fileID: 2114493021}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -52437,14 +52438,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &2114493017
-AudioListener:
+--- !u!114 &2114493017
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114493016}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListenerNumber: 0
 --- !u!20 &2114493018
 Camera:
   m_ObjectHideFlags: 0
@@ -52500,7 +52506,7 @@ Transform:
   m_Children:
   - {fileID: 1053213505}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2114493020
 MonoBehaviour:
@@ -52517,6 +52523,29 @@ MonoBehaviour:
   player: {fileID: 821821400}
   bottomLeftBounds: {x: 0, y: 0}
   topRightBounds: {x: 14, y: 65}
+--- !u!114 &2114493021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114493016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/Music/Platformer
+  PlayEvent: 1
+  StopEvent: 2
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1001 &5422938588176594440
 PrefabInstance:
   m_ObjectHideFlags: 0

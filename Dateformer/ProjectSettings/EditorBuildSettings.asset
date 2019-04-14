@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Platformer Stages/Stage1.unity
     guid: efabf5b94b892c541b41eac25bdb0e0c
   - enabled: 1
+    path: Assets/Scenes/Platformer Stages/Stage2.unity
+    guid: 63c15447381a28f4999d104e49b85d53
+  - enabled: 1
+    path: Assets/Scenes/Platformer Stages/Stage3.unity
+    guid: baaca2c9f73e1a04284d7e0963adc102
+  - enabled: 1
     path: Assets/Scenes/_Victory_Screen.unity
     guid: 7c15a23fb6c8fd0419d3177070df68d0
   - enabled: 1
@@ -53,7 +59,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Visual Novel/TurtleEvent4.unity
     guid: 89499251070c0da4b91777f4fe4e55f4
-  - enabled: 1
-    path: Assets/Scenes/Platformer Stages/Stage2.unity
+  - enabled: 0
+    path: Assets/__DELETED_GUID_Trash/f24f220aa3c260148ba1c5d726ed72fd
     guid: f24f220aa3c260148ba1c5d726ed72fd
   m_configObjects: {}
