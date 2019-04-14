@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5510462146751108060}
   - component: {fileID: 7868600272956872510}
   - component: {fileID: 3721513145459021437}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2003,7 +2003,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4959399627377265279}
   - component: {fileID: 140738305361917436}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Level Platform Tileset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
