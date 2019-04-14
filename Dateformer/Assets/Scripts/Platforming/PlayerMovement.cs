@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
             
             for (int i = 0; i < 5; i++)
             {
+                Debug.DrawLine(new Vector2(Mathf.Lerp(minX, maxX, i / 4f), minY), new Vector2(Mathf.Lerp(minX, maxX, i / 4f), minY - 0.1f), Color.red);
                 if (Physics2D.Raycast(new Vector2(Mathf.Lerp(minX, maxX, i / 4f), minY), Vector2.down, 0.1f, 1 << 8))
                 {
                     return true;
@@ -46,12 +47,14 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        jumping = Input.GetButtonDown("Jump");
+        jumping = jumping || Input.GetButtonDown("Jump");
         horizontal = Input.GetAxis("Horizontal");
     }
 
     void FixedUpdate()
     {
+        GetComponent<SpriteRenderer>().color = grounded ? Color.white : Color.black;
         rb.velocity = new Vector2(horizontal * speed * Time.fixedDeltaTime, (jumping && grounded) ? jump : rb.velocity.y);
+        jumping = false;
     }
 }
