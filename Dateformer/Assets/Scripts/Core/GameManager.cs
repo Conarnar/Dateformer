@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// last edited: evan
+/// </summary>
 public class GameManager : MonoBehaviour
 {
     public static GameManager singleton;
@@ -24,6 +27,26 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void TransitionEvent(string enemyName)
+    {
+        string sceneToLoad;
+        switch (enemyName)
+        {
+            case "Spike-chan":
+                sceneToLoad = "SpikeEvent" + (spikeAffinity.affinityLevel + 1);
+                Transition(sceneToLoad);
+                break;
+            case "Turtle-chan":
+                sceneToLoad = "TurtleEvent" + (enemyAffinity.affinityLevel + 1);
+                Transition(sceneToLoad);
+                break;
+            case "Bullet-chan":
+                sceneToLoad = "BulletEvent" + (bulletAffinity.affinityLevel + 1);
+                Transition(sceneToLoad);
+                break;
+        }
+    }
+
     public void Transition(string sceneName)
     {
         StartCoroutine(FadeTransition(sceneName));
@@ -33,11 +56,8 @@ public class GameManager : MonoBehaviour
     {
         yield return Fader.singleton.FadeOut(1);
         yield return SceneManager.LoadSceneAsync(sceneName);
-        Debug.Log("scene loaded");
         yield return new WaitForSeconds(.5f);
-        Debug.Log("have waited");
         yield return Fader.singleton.FadeIn(1);
-        Debug.Log("fade should be done");
     }
     public void RaiseAffinity(string characterName)
     {
@@ -45,6 +65,12 @@ public class GameManager : MonoBehaviour
         {
             case "Spike-chan":
                 spikeAffinity.affinityLevel++;
+                break;
+            case "Turtle-chan":
+                enemyAffinity.affinityLevel++;
+                break;
+            case "Bullet-chan":
+                bulletAffinity.affinityLevel++;
                 break;
         }
     }
@@ -56,7 +82,30 @@ public class GameManager : MonoBehaviour
             case "Spike-chan":
                 spikeAffinity.hasBeenClosed = true;
                 break;
+            case "Turtle-chan":
+                enemyAffinity.hasBeenClosed = true;
+                break;
+            case "Bullet-chan":
+                bulletAffinity.hasBeenClosed = true;
+                break;
         }
+    }
+    public void restart()
+    {
+        //restarts the game
+        spikeAffinity = new Affinity();
+        bulletAffinity = new Affinity();
+        enemyAffinity = new Affinity();
+        SceneManager.LoadScene(0); 
+    }
+
+    public void loadScene(string sceneName)
+    {
+        SceneManager.LoadScene(SceneManager.GetSceneByName(sceneName).buildIndex); 
+    }
+    public void loadScene(int buildIndex)
+    {
+        SceneManager.LoadScene(buildIndex);
     }
 
     [System.Serializable]

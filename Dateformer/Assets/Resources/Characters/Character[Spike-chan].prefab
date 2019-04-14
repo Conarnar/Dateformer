@@ -27,7 +27,7 @@ RectTransform:
   m_GameObject: {fileID: 5885888205288015195}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.85625, y: 2.85625, z: 1.1425}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5885888205395864420}
   m_Father: {fileID: 0}
@@ -62,11 +62,12 @@ MonoBehaviour:
   root: {fileID: 0}
   renderer: {fileID: 0}
   images:
-  - {fileID: 21300000, guid: 36d82e53c90743c4e8b52cf0bfbabff9, type: 3}
-  - {fileID: 21300014, guid: 36d82e53c90743c4e8b52cf0bfbabff9, type: 3}
-  - {fileID: 21300038, guid: 36d82e53c90743c4e8b52cf0bfbabff9, type: 3}
-  - {fileID: 21300020, guid: 36d82e53c90743c4e8b52cf0bfbabff9, type: 3}
-  - {fileID: 21300040, guid: 36d82e53c90743c4e8b52cf0bfbabff9, type: 3}
+  - {fileID: 21300000, guid: 85ce12129fd3090488e8a99972290725, type: 3}
+  - {fileID: 21300000, guid: 84fed27d17b9a5d4a934ad1e0c196452, type: 3}
+  - {fileID: 21300000, guid: 5c8b49f68012c4343828058bf34e9f18, type: 3}
+  - {fileID: 21300000, guid: a0f6633f525a46a43a983c7fc2ea797c, type: 3}
+  - {fileID: 21300000, guid: 48f4ebe6fb547774393bc265a5b04e03, type: 3}
+  - {fileID: 21300000, guid: 956481e9e61eb394b8f7f8467bd65a97, type: 3}
   dialogue: {fileID: 0}
 --- !u!1 &5885888205395864423
 GameObject:
@@ -96,7 +97,7 @@ RectTransform:
   m_GameObject: {fileID: 5885888205395864423}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.69, y: 2.08, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8038259202670596884}
   m_RootOrder: 0
@@ -134,7 +135,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 36d82e53c90743c4e8b52cf0bfbabff9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 85ce12129fd3090488e8a99972290725, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -180,7 +181,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 36d82e53c90743c4e8b52cf0bfbabff9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 85ce12129fd3090488e8a99972290725, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -29,8 +29,14 @@ public class SceneScript : MonoBehaviour
         yield return new WaitForSeconds(1);
         character.dialogue.Say(characterLines[dialogueIndex].dialogue, character.characterName);
         character.SetSprite((int)characterLines[dialogueIndex].currentMood);
-        dialogueIndex++;
         startedDialogue = true;
+        if (characterLines[dialogueIndex].promptForResponse)
+        {
+            choiceIndex = characterLines[dialogueIndex].choiceIndex;
+            character.dialogue.PromptForAnswer(choices[choiceIndex].choice1Text, choices[choiceIndex].choice2Text, choices[choiceIndex].choice1NextIndex, choices[choiceIndex].choice2NextIndex);
+            character.dialogue.isWaitingForResponse = true;
+        }
+        dialogueIndex++;
     }
 
 
@@ -38,7 +44,7 @@ public class SceneScript : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Space) && !character.dialogue.isWaitingForResponse && !endTriggered && startedDialogue)
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) && !character.dialogue.isWaitingForResponse && !endTriggered && startedDialogue)
         {
             if (!character.dialogue.isSpeaking || character.dialogue.isWaitingForUserInput)
             {
@@ -58,9 +64,9 @@ public class SceneScript : MonoBehaviour
                 character.SetSprite((int)characterLines[dialogueIndex].currentMood);
                 if (characterLines[dialogueIndex].promptForResponse)
                 {
+                    choiceIndex = characterLines[dialogueIndex].choiceIndex;
                     character.dialogue.PromptForAnswer(choices[choiceIndex].choice1Text, choices[choiceIndex].choice2Text, choices[choiceIndex].choice1NextIndex, choices[choiceIndex].choice2NextIndex);
-                    character.dialogue.isWaitingForResponse = true;
-                    choiceIndex++;
+                    character.dialogue.isWaitingForResponse = true;     
                     return;
                 }
                 if(!characterLines[dialogueIndex].isEndLine)
@@ -77,15 +83,16 @@ public class SceneScript : MonoBehaviour
         character.dialogue.CloseChoicePanel();
         character.Say(characterLines[dialogueIndex].dialogue);
         character.SetSprite((int)characterLines[dialogueIndex].currentMood);
-        if(!characterLines[dialogueIndex].isEndLine)
-            dialogueIndex = characterLines[dialogueIndex].nextDialogueIndex;
+
         if (characterLines[dialogueIndex].promptForResponse)
         {
+            choiceIndex = characterLines[dialogueIndex].choiceIndex;
             character.dialogue.PromptForAnswer(choices[choiceIndex].choice1Text, choices[choiceIndex].choice2Text, choices[choiceIndex].choice1NextIndex, choices[choiceIndex].choice2NextIndex);
             character.dialogue.isWaitingForResponse = true;
-            choiceIndex++;
-            return;
         }
+
+        if (!characterLines[dialogueIndex].isEndLine)
+            dialogueIndex = characterLines[dialogueIndex].nextDialogueIndex;
     }
 
     public void AnswerChoiceTwo()
@@ -95,16 +102,17 @@ public class SceneScript : MonoBehaviour
         character.dialogue.CloseChoicePanel();
         character.Say(characterLines[dialogueIndex].dialogue);
         character.SetSprite((int)characterLines[dialogueIndex].currentMood);
-        if(!characterLines[dialogueIndex].isEndLine)
-            dialogueIndex = characterLines[dialogueIndex].nextDialogueIndex;
 
         if (characterLines[dialogueIndex].promptForResponse)
         {
+            choiceIndex = characterLines[dialogueIndex].choiceIndex;
             character.dialogue.PromptForAnswer(choices[choiceIndex].choice1Text, choices[choiceIndex].choice2Text, choices[choiceIndex].choice1NextIndex, choices[choiceIndex].choice2NextIndex);
             character.dialogue.isWaitingForResponse = true;
-            choiceIndex++;
             return;
         }
+
+        if (!characterLines[dialogueIndex].isEndLine)
+            dialogueIndex = characterLines[dialogueIndex].nextDialogueIndex;
     }
 
     [System.Serializable]
@@ -114,6 +122,7 @@ public class SceneScript : MonoBehaviour
         public string dialogue;
         public Mood currentMood;
         public bool promptForResponse;
+        public int choiceIndex;
         public bool isEndLine;
         public bool closeRoute = false;
     }
