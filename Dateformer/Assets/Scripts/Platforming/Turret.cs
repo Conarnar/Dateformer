@@ -14,7 +14,7 @@ public class Turret : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        time = Random.Range(0, fireDelay);
     }
 
     // Update is called once per frame
