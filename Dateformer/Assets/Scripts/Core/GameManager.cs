@@ -69,13 +69,13 @@ public class GameManager : MonoBehaviour
     {
         switch (characterName)
         {
-            case "Spike-chan":
+            case "Spike":
                 spikeAffinity.affinityLevel++;
                 break;
-            case "Turtle-chan":
+            case "Turtle":
                 enemyAffinity.affinityLevel++;
                 break;
-            case "Bullet-chan":
+            case "Bullet":
                 bulletAffinity.affinityLevel++;
                 break;
         }
