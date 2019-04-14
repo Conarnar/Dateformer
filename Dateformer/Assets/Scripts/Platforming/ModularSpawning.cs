@@ -21,7 +21,28 @@ public class ModularSpawning : MonoBehaviour
     void Start()
     {
         GameManager manager = GameManager.singleton;
-        int[] affinities = new int[] { manager.spikeAffinity.affinityLevel, manager.bulletAffinity.affinityLevel, manager.enemyAffinity.affinityLevel };
+        List<int> affinities = new List<int>();
+        List<int> spawnable = new List<int>();
+
+        if (!manager.spikeAffinity.hasBeenClosed)
+        {
+            affinities.Add(manager.spikeAffinity.affinityLevel);
+            spawnable.Add(0);
+        }
+        if (!manager.bulletAffinity.hasBeenClosed)
+        {
+            affinities.Add(manager.bulletAffinity.affinityLevel);
+            spawnable.Add(1);
+        }
+        if (!manager.enemyAffinity.hasBeenClosed)
+        {
+            affinities.Add(manager.enemyAffinity.affinityLevel);
+            spawnable.Add(2);
+        }
+
+        if (affinities.Count == 0)
+            return;
+
         List<int> orderedAffinities = new List<int>();
 
         orderedAffinities.AddRange(affinities);
@@ -29,7 +50,7 @@ public class ModularSpawning : MonoBehaviour
 
         List<int> choices = new List<int>();
 
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < affinities.Count; i++)
         {
             if (affinities[i] == orderedAffinities[0] && spawnLowestAffinity)
             {
@@ -47,7 +68,7 @@ public class ModularSpawning : MonoBehaviour
 
         if (choices.Count == 0)
         {
-            choices.AddRange(new int[] { 0, 1, 2 });
+            choices.AddRange(spawnable);
         }
 
         switch (choices[Random.Range(0, choices.Count)])
