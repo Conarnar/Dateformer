@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// last edited: evan
+/// </summary>
 public class GameManager : MonoBehaviour
 {
     public static GameManager singleton;
@@ -57,6 +60,19 @@ public class GameManager : MonoBehaviour
                 spikeAffinity.hasBeenClosed = true;
                 break;
         }
+    }
+    public void restart()
+    {
+        //restarts the game
+        spikeAffinity = new Affinity();
+        bulletAffinity = new Affinity();
+        enemyAffinity = new Affinity();
+        SceneManager.LoadScene(0); 
+    }
+
+    public void loadScene(string sceneName)
+    {
+        SceneManager.LoadScene(SceneManager.GetSceneByName(sceneName).buildIndex); 
     }
 
     [System.Serializable]
