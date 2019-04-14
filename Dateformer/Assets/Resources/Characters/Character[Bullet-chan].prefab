@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8391446771040370860}
   - component: {fileID: 2059428313}
   m_Layer: 5
-  m_Name: Character[Spike-chan]
+  m_Name: Character[Bullet-chan]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58,16 +58,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14c694da6357a11418579a21b70d565c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: Spike-chan
+  characterName: Bullet-chan
   root: {fileID: 0}
   renderer: {fileID: 0}
   images:
-  - {fileID: 21300000, guid: 85ce12129fd3090488e8a99972290725, type: 3}
-  - {fileID: 21300000, guid: 84fed27d17b9a5d4a934ad1e0c196452, type: 3}
-  - {fileID: 21300000, guid: 5c8b49f68012c4343828058bf34e9f18, type: 3}
-  - {fileID: 21300000, guid: a0f6633f525a46a43a983c7fc2ea797c, type: 3}
-  - {fileID: 21300000, guid: 48f4ebe6fb547774393bc265a5b04e03, type: 3}
-  - {fileID: 21300000, guid: 956481e9e61eb394b8f7f8467bd65a97, type: 3}
+  - {fileID: 21300000, guid: 20e751f110950674fa864c58241d4b77, type: 3}
+  - {fileID: 21300000, guid: b007a1ac0d4674b41aaf8ebf7451c35d, type: 3}
+  - {fileID: 21300000, guid: 7c9459ca91c4ece4382178937fac9db9, type: 3}
+  - {fileID: 21300000, guid: 23a750e7850af0f4c8d06a3734b67b5f, type: 3}
+  - {fileID: 21300000, guid: 640e9e2e1eef8074c9aef5edf1ada964, type: 3}
+  - {fileID: 21300000, guid: 20e751f110950674fa864c58241d4b77, type: 3}
   dialogue: {fileID: 0}
 --- !u!1 &5885888205395864423
 GameObject:
@@ -104,7 +104,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -2.5}
+  m_AnchoredPosition: {x: 0, y: -4.5}
   m_SizeDelta: {x: 108.38, y: 100.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5885888205395864418
@@ -135,7 +135,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 85ce12129fd3090488e8a99972290725, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 20e751f110950674fa864c58241d4b77, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -181,7 +181,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 85ce12129fd3090488e8a99972290725, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 20e751f110950674fa864c58241d4b77, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
