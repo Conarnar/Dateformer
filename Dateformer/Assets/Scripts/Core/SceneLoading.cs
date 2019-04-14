@@ -22,5 +22,10 @@ public class SceneLoading : MonoBehaviour
         GameManager.singleton.restart(); 
     }
 
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
 
 }
