@@ -119,7 +119,7 @@ public class GameManager : MonoBehaviour
     {
         public int affinityLevel = 0;
         public bool hasBeenClosed = false;
-    }
+    }   
 
     private void Update()
     {
