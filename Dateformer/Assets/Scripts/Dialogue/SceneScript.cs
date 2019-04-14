@@ -28,8 +28,8 @@ public class SceneScript : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         character.dialogue.Say(characterLines[dialogueIndex].dialogue, character.characterName);
-        dialogueIndex++;
         character.SetSprite((int)characterLines[dialogueIndex].currentMood);
+        dialogueIndex++;
         startedDialogue = true;
     }
 
