@@ -28,7 +28,7 @@ public class LeftRightAI : MonoBehaviour
     {
         checkGround(); 
         velocity = movingLeft ? Vector2.left * speed : Vector2.right * speed;
-        rb.MovePosition(rb.position + velocity * Time.deltaTime);
+        rb.MovePosition(rb.position + velocity * Time.fixedDeltaTime);
     }
 
     void checkGround()
@@ -37,14 +37,13 @@ public class LeftRightAI : MonoBehaviour
         Debug.DrawLine( groundCheckLeft.position, (Vector2)groundCheckLeft.position + Vector2.down); 
         RaycastHit2D rightCheck = Physics2D.Linecast(groundCheckRight.position, (Vector2)groundCheckRight.position + Vector2.down, groundLayerMask);
         Debug.DrawLine(groundCheckRight.position, (Vector2)groundCheckRight.position + Vector2.down);
-        Debug.Log(leftCheck.collider + " " + rightCheck.collider); 
 
-        if (leftCheck.collider == null || !leftCheck.collider.CompareTag("Ground"))
+        if (leftCheck.collider == null || leftCheck.point == (Vector2)groundCheckLeft.position ||  !leftCheck.collider.CompareTag("Ground"))
         {
             movingLeft = false;
         }
 
-        if (rightCheck.collider == null ||  !rightCheck.collider.CompareTag("Ground"))
+        if (rightCheck.collider == null || rightCheck.point == (Vector2)groundCheckRight.position || !rightCheck.collider.CompareTag("Ground"))
         {
             movingLeft = true; 
         }
