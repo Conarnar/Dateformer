@@ -99,7 +99,10 @@ MonoBehaviour:
     m_Bits: 256
   speed: 300
   jump: 5
+<<<<<<< HEAD
   groundCheck: 0.5
+=======
+>>>>>>> bf6228ad9c2cae475757eaff3d3f8408fec58411
 --- !u!50 &1767764284341488619
 Rigidbody2D:
   serializedVersion: 4
@@ -116,7 +119,11 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
+<<<<<<< HEAD
   m_Material: {fileID: 6200000, guid: 5c40ebf28c296ab4fae2c794f9028ebd, type: 2}
+=======
+  m_Material: {fileID: 6200000, guid: 3fb74049532298e49a538ddf3f8de504, type: 2}
+>>>>>>> bf6228ad9c2cae475757eaff3d3f8408fec58411
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0

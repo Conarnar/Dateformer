@@ -3344,7 +3344,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4959399627377265279}
   - component: {fileID: 140738305361917436}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Level Platform Tileset
   m_TagString: Untagged
   m_Icon: {fileID: 0}

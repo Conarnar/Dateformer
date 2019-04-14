@@ -3,7 +3,13 @@ guid: 75109ee9a60185f4a95eabc13e0187b7
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - spikePrefab: {fileID: 297877864388006530, guid: 5b1b5ec7d5c632846b1c11aff7f690a7,
+      type: 3}
+  - turretPrefab: {fileID: 7722695745807350742, guid: 844334a18de528b4ca6916626504af4b,
+      type: 3}
+  - turtlePrefab: {fileID: 1994508739577041709, guid: b5ea5a634a95ea54f874e02e4841f720,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
