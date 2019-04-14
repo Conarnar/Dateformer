@@ -10,10 +10,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] LayerMask groundLayer; 
     [SerializeField] float speed;
     [SerializeField] float jump;
+    [SerializeField] float jumpHoldDuration;
 
     
     bool jumping = false;
+    bool jumpHolding = false;
+    float jumpHeld = 0;
     float horizontal = 0;
+
     bool grounded {
         get
         {
@@ -48,12 +52,30 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         jumping = jumping || Input.GetButtonDown("Jump");
+        jumpHolding = jumpHeld > 0 && Input.GetButton("Jump");
         horizontal = Input.GetAxis("Horizontal");
     }
 
     void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontal * speed * Time.fixedDeltaTime, (jumping && grounded) ? jump : rb.velocity.y);
+        if (jumping && grounded)
+        {
+            jumpHeld += Time.fixedDeltaTime;
+        }
+        else {
+            if (jumpHolding && jumpHeld < jumpHoldDuration)
+            {
+                jumpHeld += Time.fixedDeltaTime;
+                jumping = true;
+            }
+            else
+            {
+                jumping = false;
+                jumpHeld = grounded ? 0 : jumpHoldDuration;
+            }
+        }
+
+        rb.velocity = new Vector2(horizontal * speed * Time.fixedDeltaTime, jumping ? jump : rb.velocity.y);
         jumping = false;
     }
 }

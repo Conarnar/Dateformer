@@ -168,8 +168,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3238013612158824055}
   - component: {fileID: 1645496080982577841}
-  - component: {fileID: 8436130034314926034}
-  - component: {fileID: 2936425844563817859}
   m_Layer: 0
   m_Name: Safe Part
   m_TagString: Untagged
@@ -217,38 +215,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.5, y: 0.3}
   m_EdgeRadius: 0
---- !u!251 &8436130034314926034
-PlatformEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 280431871575914918}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RotationalOffset: 0
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 169.3
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1
---- !u!114 &2936425844563817859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 280431871575914918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b75dcbda2e5d954e9fd7b3ef295b4e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyName: Spike-chan
 --- !u!1 &297877864388006530
 GameObject:
   m_ObjectHideFlags: 0
