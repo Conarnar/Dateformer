@@ -44,7 +44,7 @@ public class SceneScript : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Space) && !character.dialogue.isWaitingForResponse && !endTriggered && startedDialogue)
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) && !character.dialogue.isWaitingForResponse && !endTriggered && startedDialogue)
         {
             if (!character.dialogue.isSpeaking || character.dialogue.isWaitingForUserInput)
             {
