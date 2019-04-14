@@ -14,7 +14,6 @@ public class ColliderKillsPlayer : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Player died to " + enemyName);
             GameManager.singleton.TransitionEvent(enemyName);
             collision.gameObject.SetActive(false);
         }

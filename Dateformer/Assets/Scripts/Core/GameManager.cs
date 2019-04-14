@@ -108,7 +108,7 @@ public class GameManager : MonoBehaviour
 
     public void restart()
     {
-        //restarts the game
+        //resets the affinity
         spikeAffinity = new Affinity();
         bulletAffinity = new Affinity();
         enemyAffinity = new Affinity();
