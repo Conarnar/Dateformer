@@ -22,7 +22,7 @@ public class Turret : MonoBehaviour
     {
         renderer = GetComponent<SpriteRenderer>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        time = Random.Range(0, fireDelay);
+        time = -fireDelay - Random.Range(0, fireDelay);
     }
 
     // Update is called once per frame
