@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     float horizontal = 0;
 
     public string path; //For calling correct Fmod sound.
-    public string music; // For calling correct song
+
 
     bool grounded {
         get
@@ -52,8 +52,6 @@ public class PlayerMovement : MonoBehaviour
         col = GetComponent<Collider2D>();
         anim = GetComponent<Animator>();
         spriteRen = GetComponent<SpriteRenderer>();
-
-        PlayMusic();
 
     }
 
@@ -96,9 +94,4 @@ public class PlayerMovement : MonoBehaviour
         jumping = false;
     }
 
-    void PlayMusic()
-    {
-        if (!GameManager.singleton.spikeAffinity.hasBeenClosed || !GameManager.singleton.enemyAffinity.hasBeenClosed || !GameManager.singleton.bulletAffinity.hasBeenClosed)
-            FMODUnity.RuntimeManager.PlayOneShot(music, GetComponent<Transform>().position);
-    }
 }
