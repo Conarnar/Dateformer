@@ -13,201 +13,31 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-<<<<<<< HEAD
-  - {fileID: 114242100275028664}
-  - {fileID: 114159900382627314}
+  - {fileID: 114851294193477150}
+  - {fileID: 114240022743742590}
   EditorEvents:
-  - {fileID: 114378411533169768}
-  - {fileID: 114059610008321714}
-  - {fileID: 114493473438076788}
-  - {fileID: 114680503599596292}
-  - {fileID: 114307121384784132}
-  - {fileID: 114517386699327372}
-  - {fileID: 114097019422931298}
-  - {fileID: 114720233007100556}
-  - {fileID: 114301651663837878}
-  - {fileID: 114792951154918062}
-  - {fileID: 114931623990248170}
-  - {fileID: 114627918751089092}
-  - {fileID: 114409495679336166}
-  - {fileID: 114199444592669020}
+  - {fileID: 114786971190619136}
+  - {fileID: 114910430160042538}
+  - {fileID: 114932447223552662}
+  - {fileID: 114347300662374316}
+  - {fileID: 114408078116794064}
+  - {fileID: 114412749975488190}
+  - {fileID: 114163715950242486}
+  - {fileID: 114588802439432118}
+  - {fileID: 114445377752226782}
+  - {fileID: 114458935873114032}
+  - {fileID: 114367537861427148}
+  - {fileID: 114173684877112704}
+  - {fileID: 114816399894723174}
+  - {fileID: 114868430004546402}
+  - {fileID: 114891266094338508}
   MasterBanks:
-  - {fileID: 114159900382627314}
+  - {fileID: 114240022743742590}
   StringsBanks:
-  - {fileID: 114242100275028664}
-  stringsBankWriteTime: 636908510059520952
+  - {fileID: 114851294193477150}
+  stringsBankWriteTime: 636908578459874676
   cacheVersion: 3
---- !u!114 &114059610008321714
-=======
-  - {fileID: 114117542933716992}
-  - {fileID: 114750172371825744}
-  EditorEvents:
-  - {fileID: 114654040310123640}
-  - {fileID: 114507393496371540}
-  - {fileID: 114758429759112560}
-  - {fileID: 114554890382324872}
-  - {fileID: 114516656992506328}
-  - {fileID: 114351171993011524}
-  - {fileID: 114100521632732828}
-  - {fileID: 114261790680451696}
-  - {fileID: 114986405378132780}
-  - {fileID: 114660342688540216}
-  - {fileID: 114704526573550820}
-  - {fileID: 114836325520597196}
-  - {fileID: 114854209960408930}
-  - {fileID: 114676062631981056}
-  MasterBanks:
-  - {fileID: 114750172371825744}
-  StringsBanks:
-  - {fileID: 114117542933716992}
-  stringsBankWriteTime: 636908555593029923
-  cacheVersion: 3
---- !u!114 &114010307441423610
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  Path: event:/SFX/jump
-  guid: 08d7ba29005cb34382ac600ebe2ef540
-  Banks:
-  - {fileID: 114159900382627314}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1850
---- !u!114 &114097019422931298
-=======
-  Path: C:\Users\drfro\Documents\Dateformer\Dateformer\Assets\StreamingAssets\Master
-    Bank.bank
-  lastModified: 636908474171218398
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 1522720
-  Exists: 1
---- !u!114 &114012796529483244
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  Path: event:/SFX/Emotions/blushing
-  guid: 35b5c289b041ee47837411e6fcd51f37
-  Banks:
-  - {fileID: 114159900382627314}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1379
---- !u!114 &114159900382627314
-=======
-  Path: C:\Users\drfro\Documents\Dateformer\Dateformer\Assets\StreamingAssets\Master
-    Bank.bank
-  lastModified: 636908537056448904
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 1522944
-  Exists: 0
---- !u!114 &114100521632732828
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  Path: C:\Users\Santiago\Desktop\Dateformer\Dateformer\Assets\StreamingAssets\Master
-    Bank.bank
-  lastModified: 636908510059506085
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 1522720
-  Exists: 1
---- !u!114 &114199444592669020
-=======
-  Path: event:/SFX/Emotions/blushing
-  guid: 35b5c289b041ee47837411e6fcd51f37
-  Banks:
-  - {fileID: 114750172371825744}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1379
---- !u!114 &114106929597937724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\baotd\OneDrive\Documents\GD_Projects\Dateformer\Dateformer\Assets\StreamingAssets\Master
-    Bank.bank
-  lastModified: 636908555593380696
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 1522944
-  Exists: 1
---- !u!114 &114117542933716992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: Assets\StreamingAssets\Master Bank.strings.bank
-  lastModified: 636908555593029923
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 1310
-  Exists: 1
---- !u!114 &114261790680451696
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
+--- !u!114 &114163715950242486
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -219,83 +49,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  Path: event:/Music/Woooooo
-  guid: f634bce652704946a0ded0435c8b61c9
+  Path: event:/SFX/Emotions/blushing
+  guid: 35b5c289b041ee47837411e6fcd51f37
   Banks:
-  - {fileID: 114159900382627314}
-=======
-  Path: event:/Music/Platformer
-  guid: 59f654cdfb5cc94aa6a30fe2cd2fc167
-  Banks:
-  - {fileID: 114750172371825744}
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-<<<<<<< HEAD
-  Length: 62458
---- !u!114 &114242100275028664
-=======
-  Length: 41769
---- !u!114 &114351171993011524
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  Path: Assets\StreamingAssets\Master Bank.strings.bank
-  lastModified: 636908510059520952
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 1310
-  Exists: 1
---- !u!114 &114301651663837878
-=======
-  Path: event:/SFX/normal_death
-  guid: 312944cfeddb234bab32567f39648e9b
-  Banks:
-  - {fileID: 114750172371825744}
+  - {fileID: 114240022743742590}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1394
---- !u!114 &114496820425636818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: D:\GitHub\Dateformer\Dateformer\Dateformer\Assets\StreamingAssets\Master Bank.bank
-  lastModified: 636908548644351841
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 1522944
-  Exists: 1
---- !u!114 &114507393496371540
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
+  Length: 1379
+--- !u!114 &114173684877112704
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -307,28 +72,84 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/SFX/test
-  guid: 6c97ecd6636fe44fa062dc5231dc7631
+  Path: event:/SFX/Emotions/sad
+  guid: ab5ced98b217ca4688153b2ce8c7481a
   Banks:
-<<<<<<< HEAD
-  - {fileID: 114159900382627314}
-  IsStream: 1
-=======
-  - {fileID: 114750172371825744}
+  - {fileID: 114240022743742590}
   IsStream: 0
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-<<<<<<< HEAD
-  Length: 10663
---- !u!114 &114307121384784132
-=======
+  Length: 2409
+--- !u!114 &114240022743742590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\drfro\Documents\Dateformer\Dateformer\Assets\StreamingAssets\Master
+    Bank.bank
+  lastModified: 636908578459855148
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 1525344
+  Exists: 1
+--- !u!114 &114347300662374316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/bullet
+  guid: 1ee42a282396944692ab481930f253da
+  Banks:
+  - {fileID: 114240022743742590}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 937
+--- !u!114 &114367537861427148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/turtle_bounce
+  guid: a4f8a35fc00ee349b178ee5dec87b844
+  Banks:
+  - {fileID: 114240022743742590}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
   Length: 1850
---- !u!114 &114516656992506328
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
+--- !u!114 &114408078116794064
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -343,11 +164,7 @@ MonoBehaviour:
   Path: event:/SFX/select
   guid: 28529b64bd744c4d8bb52bbca4b99c28
   Banks:
-<<<<<<< HEAD
-  - {fileID: 114159900382627314}
-=======
-  - {fileID: 114750172371825744}
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
+  - {fileID: 114240022743742590}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -355,11 +172,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 462
-<<<<<<< HEAD
---- !u!114 &114378411533169768
-=======
---- !u!114 &114554890382324872
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
+--- !u!114 &114412749975488190
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -371,200 +184,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  Path: event:/SFX/Emotions/happy
-  guid: 07800b99a24547488dee85d2ebc0c19c
-  Banks:
-  - {fileID: 114159900382627314}
-=======
-  Path: event:/SFX/bullet
-  guid: 1ee42a282396944692ab481930f253da
-  Banks:
-  - {fileID: 114750172371825744}
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-<<<<<<< HEAD
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 798
---- !u!114 &114409495679336166
-=======
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 937
---- !u!114 &114654040310123640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Emotions/happy
-  guid: 07800b99a24547488dee85d2ebc0c19c
-  Banks:
-  - {fileID: 114750172371825744}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 798
---- !u!114 &114660342688540216
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  Path: event:/SFX/Emotions/angry
-  guid: de6677a58b166042870d0a4912483f95
-  Banks:
-  - {fileID: 114159900382627314}
-=======
-  Path: event:/SFX/scrolling
-  guid: a22907b7ee4ff245b62a244c3f4b72a0
-  Banks:
-  - {fileID: 114750172371825744}
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-<<<<<<< HEAD
-  Length: 1388
---- !u!114 &114493473438076788
-=======
-  Length: 460
---- !u!114 &114676062631981056
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  Path: event:/SFX/transition
-  guid: 1e23fbbf48aa2047afc5c8c41c456ce4
-  Banks:
-  - {fileID: 114159900382627314}
-  IsStream: 0
-=======
-  Path: event:/Music/Woooooo
-  guid: f634bce652704946a0ded0435c8b61c9
-  Banks:
-  - {fileID: 114750172371825744}
-  IsStream: 1
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-<<<<<<< HEAD
-  Length: 6062
---- !u!114 &114517386699327372
-=======
-  Length: 62458
---- !u!114 &114697628851960346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: D:\Documents\Unity\Dateformer\Dateformer\Assets\StreamingAssets\Master Bank.bank
-  lastModified: 636908525876786513
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 1522944
-  Exists: 1
---- !u!114 &114704526573550820
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
   Path: event:/SFX/normal_death
   guid: 312944cfeddb234bab32567f39648e9b
   Banks:
-  - {fileID: 114159900382627314}
-=======
-  Path: event:/SFX/Emotions/sad
-  guid: ab5ced98b217ca4688153b2ce8c7481a
-  Banks:
-  - {fileID: 114750172371825744}
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
+  - {fileID: 114240022743742590}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-<<<<<<< HEAD
   Length: 1394
---- !u!114 &114627918751089092
-=======
-  Length: 2409
---- !u!114 &114750172371825744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\baotd\OneDrive\Documents\GD_Projects\Dateformer\Dateformer\Assets\StreamingAssets\Master
-    Bank.bank
-  lastModified: 636908555593380696
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 1522944
-  Exists: 1
---- !u!114 &114758429759112560
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
+--- !u!114 &114445377752226782
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -576,30 +207,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  Path: event:/SFX/Emotions/shocked
-  guid: d09724189a15ce46ab3481cb2f25d2ee
+  Path: event:/SFX/test
+  guid: 6c97ecd6636fe44fa062dc5231dc7631
   Banks:
-  - {fileID: 114159900382627314}
-=======
-  Path: event:/SFX/transition
-  guid: 1e23fbbf48aa2047afc5c8c41c456ce4
+  - {fileID: 114240022743742590}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10663
+--- !u!114 &114458935873114032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/scrolling
+  guid: a22907b7ee4ff245b62a244c3f4b72a0
   Banks:
-  - {fileID: 114750172371825744}
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
+  - {fileID: 114240022743742590}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-<<<<<<< HEAD
-  Length: 832
---- !u!114 &114680503599596292
-=======
-  Length: 6062
---- !u!114 &114836325520597196
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
+  Length: 460
+--- !u!114 &114588802439432118
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -611,72 +253,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  Path: event:/SFX/bullet
-  guid: 1ee42a282396944692ab481930f253da
-  Banks:
-  - {fileID: 114159900382627314}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 937
---- !u!114 &114720233007100556
-=======
-  Path: event:/SFX/Emotions/shocked
-  guid: d09724189a15ce46ab3481cb2f25d2ee
-  Banks:
-  - {fileID: 114750172371825744}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 832
---- !u!114 &114854209960408930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Emotions/angry
-  guid: de6677a58b166042870d0a4912483f95
-  Banks:
-  - {fileID: 114750172371825744}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1388
---- !u!114 &114876467555189368
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
   Path: event:/Music/Platformer
   guid: 59f654cdfb5cc94aa6a30fe2cd2fc167
   Banks:
-  - {fileID: 114159900382627314}
+  - {fileID: 114240022743742590}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -684,18 +264,72 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 41769
---- !u!114 &114792951154918062
-=======
-  Path: C:\Users\truon\Desktop\Dateformer\Dateformer\Assets\StreamingAssets\Master
-    Bank.bank
-  lastModified: 636908507077123085
+--- !u!114 &114786971190619136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Emotions/happy
+  guid: 07800b99a24547488dee85d2ebc0c19c
+  Banks:
+  - {fileID: 114240022743742590}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 798
+--- !u!114 &114816399894723174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Emotions/shocked
+  guid: d09724189a15ce46ab3481cb2f25d2ee
+  Banks:
+  - {fileID: 114240022743742590}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 832
+--- !u!114 &114851294193477150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: Assets\StreamingAssets\Master Bank.strings.bank
+  lastModified: 636908578459874676
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 1522720
+    Value: 1352
   Exists: 1
---- !u!114 &114986405378132780
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
+--- !u!114 &114868430004546402
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -707,27 +341,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  Path: event:/SFX/scrolling
-  guid: a22907b7ee4ff245b62a244c3f4b72a0
+  Path: event:/SFX/Emotions/angry
+  guid: de6677a58b166042870d0a4912483f95
   Banks:
-  - {fileID: 114159900382627314}
+  - {fileID: 114240022743742590}
   IsStream: 0
-=======
-  Path: event:/SFX/test
-  guid: 6c97ecd6636fe44fa062dc5231dc7631
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1388
+--- !u!114 &114891266094338508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Woooooo
+  guid: f634bce652704946a0ded0435c8b61c9
   Banks:
-  - {fileID: 114750172371825744}
+  - {fileID: 114240022743742590}
   IsStream: 1
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-<<<<<<< HEAD
-  Length: 460
---- !u!114 &114931623990248170
+  Length: 62458
+--- !u!114 &114910430160042538
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -739,17 +387,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Emotions/sad
-  guid: ab5ced98b217ca4688153b2ce8c7481a
+  Path: event:/SFX/jump
+  guid: 08d7ba29005cb34382ac600ebe2ef540
   Banks:
-  - {fileID: 114159900382627314}
+  - {fileID: 114240022743742590}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 2409
-=======
-  Length: 10663
->>>>>>> 9a41518d81243d8e798635092ec3530bdbdf4ba9
+  Length: 1850
+--- !u!114 &114932447223552662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/transition
+  guid: 1e23fbbf48aa2047afc5c8c41c456ce4
+  Banks:
+  - {fileID: 114240022743742590}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6062
