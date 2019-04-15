@@ -13,13 +13,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpHoldDuration;
     [SerializeField] SpriteRenderer spriteRen;
     Animator anim;
-    
+
     bool jumping = false;
     bool jumpHolding = false;
     float jumpHeld = 0;
     float horizontal = 0;
 
-    public string path; //For calling correct Fmod Event.
+    public string path; //For calling correct Fmod sound.
+    public string music; // For calling correct song
 
     bool grounded {
         get
@@ -51,6 +52,9 @@ public class PlayerMovement : MonoBehaviour
         col = GetComponent<Collider2D>();
         anim = GetComponent<Animator>();
         spriteRen = GetComponent<SpriteRenderer>();
+
+        PlayMusic();
+
     }
 
     // Update is called once per frame
@@ -90,5 +94,11 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(horizontal * speed * Time.fixedDeltaTime, jumping ? jump : rb.velocity.y);
         anim.SetFloat("vertical", rb.velocity.y);
         jumping = false;
+    }
+
+    void PlayMusic()
+    {
+        if (!GameManager.singleton.spikeAffinity.hasBeenClosed || !GameManager.singleton.enemyAffinity.hasBeenClosed || !GameManager.singleton.bulletAffinity.hasBeenClosed)
+            FMODUnity.RuntimeManager.PlayOneShot(music, GetComponent<Transform>().position);
     }
 }

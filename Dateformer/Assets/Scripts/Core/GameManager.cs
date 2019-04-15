@@ -33,6 +33,20 @@ public class GameManager : MonoBehaviour
         pauseScreen = GameObject.FindGameObjectWithTag("PauseScreen"); 
     }
 
+    public Affinity GetAffinity(string enemyName)
+    {
+        switch (enemyName)
+        {
+            case "Spike":
+                return spikeAffinity;
+            case "Turtle":
+                return enemyAffinity;
+            case "Bullet":
+                return bulletAffinity;
+        }
+        return null;
+    }
+
     public void TransitionEvent(string enemyName)
     {
         string sceneToLoad;
@@ -100,7 +114,7 @@ public class GameManager : MonoBehaviour
     public void TransitionNextLevel()
     {
         stageIndex++;
-        if (stageIndex > 1)
+        if (stageIndex > 2)
             stageIndex = 0;
         string stageLevel = "Stage" + (stageIndex + 1);
         Transition(stageLevel);
@@ -108,7 +122,7 @@ public class GameManager : MonoBehaviour
 
     public void restart()
     {
-        //restarts the game
+        //resets the affinity
         spikeAffinity = new Affinity();
         bulletAffinity = new Affinity();
         enemyAffinity = new Affinity();
@@ -119,7 +133,7 @@ public class GameManager : MonoBehaviour
     {
         public int affinityLevel = 0;
         public bool hasBeenClosed = false;
-    }
+    }   
 
     private void Update()
     {

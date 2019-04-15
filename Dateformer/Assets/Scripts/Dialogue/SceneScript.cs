@@ -28,7 +28,7 @@ public class SceneScript : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         character.dialogue.Say(characterLines[dialogueIndex].dialogue, character.characterName);
-        character.SetSprite((int)characterLines[dialogueIndex].currentMood);
+        character.SetSprite(characterLines[dialogueIndex].currentMood);
         startedDialogue = true;
         if (characterLines[dialogueIndex].promptForResponse)
         {
@@ -57,14 +57,14 @@ public class SceneScript : MonoBehaviour
                         GameManager.singleton.RaiseAffinity(character.characterName);
 
                     endTriggered = true;
-                    if (isEndEvent)
-                        GameManager.singleton.Transition(sceneToLoad);
-                    else
+                    if (!isEndEvent || GameManager.singleton.GetAffinity(character.characterName).hasBeenClosed)
                         GameManager.singleton.TransitionNextLevel();
+                    else
+                        GameManager.singleton.Transition(sceneToLoad);
                     return;
                 }
                 character.Say(characterLines[dialogueIndex].dialogue);
-                character.SetSprite((int)characterLines[dialogueIndex].currentMood);
+                character.SetSprite(characterLines[dialogueIndex].currentMood);
                 if (characterLines[dialogueIndex].promptForResponse)
                 {
                     choiceIndex = characterLines[dialogueIndex].choiceIndex;
@@ -85,7 +85,7 @@ public class SceneScript : MonoBehaviour
         character.dialogue.isWaitingForResponse = false;
         character.dialogue.CloseChoicePanel();
         character.Say(characterLines[dialogueIndex].dialogue);
-        character.SetSprite((int)characterLines[dialogueIndex].currentMood);
+        character.SetSprite(characterLines[dialogueIndex].currentMood);
 
         if (characterLines[dialogueIndex].promptForResponse)
         {
@@ -104,7 +104,7 @@ public class SceneScript : MonoBehaviour
         character.dialogue.isWaitingForResponse = false;
         character.dialogue.CloseChoicePanel();
         character.Say(characterLines[dialogueIndex].dialogue);
-        character.SetSprite((int)characterLines[dialogueIndex].currentMood);
+        character.SetSprite(characterLines[dialogueIndex].currentMood);
 
         if (characterLines[dialogueIndex].promptForResponse)
         {

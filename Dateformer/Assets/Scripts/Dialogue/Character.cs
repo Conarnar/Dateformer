@@ -14,6 +14,8 @@ public class Character : MonoBehaviour
 
     public DialogueSystem dialogue;
 
+    Mood currentmood;
+
     private void Start()
     {
         CharacterManager cm = CharacterManager.singleton;
@@ -42,9 +44,38 @@ public class Character : MonoBehaviour
     }
 
 
-    public void SetSprite(int index)
+    public void SetSprite(Mood index)
     {
-        renderer.sprite = images[index];
+        if (currentmood == index)
+            return;
+
+        currentmood = index;
+
+        renderer.sprite = images[(int) index];
+
+        switch ((int)index)
+        {
+            case 1:
+                FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Emotions/happy", GetComponent<Transform>().position);
+                break;
+
+            case 2:
+                FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Emotions/sad", GetComponent<Transform>().position);
+                break;
+
+            case 3:
+                FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Emotions/blushing", GetComponent<Transform>().position);
+                break;
+
+            case 4:
+                FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Emotions/angry", GetComponent<Transform>().position);
+                break;
+
+            case 5:
+                FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Emotions/shocked", GetComponent<Transform>().position);
+                break;
+        }
+
     }
 
 }

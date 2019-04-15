@@ -17,13 +17,14 @@ public class SceneLoading : MonoBehaviour
     }
 
     public void restartGame()
-    {
-        if(GameManager.singleton != null)
-        {
-            GameManager.singleton.restart(); 
-        }
+    { 
         loadScene("_Main_Menu");
+        GameManager.singleton.restart(); 
+    }
 
+    public void Quit()
+    {
+        Application.Quit();
     }
 
 
